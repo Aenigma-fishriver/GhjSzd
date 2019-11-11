@@ -1,5 +1,5 @@
 .alert-danger {
-    border-color: transparent;
+    border-color: #fca18b;
 }
 
 .alert-danger {
@@ -12,57 +12,12 @@
 
 .group_0 {
     color: transparent !important;
-    background: url(https://i.loli.net/2019/10/21/elorKWgY97UkxNv.png) no-repeat !important;
-}
-
-.glyphicon {
-    background-color: transparent;
-}
-
-.glyphicon {
-    border-color: #ffffff80;
-}
-
-.am-topbar {
-    background: transparent;
-}
-
-.am-topbar-btn {
-    background-color: transparent;
-}
-
-.am-topbar-btn {
-    border-color: transparent;
-}
-
-.am-topbar-btn:hover {
-    background-color: transparent;
-}
-
-.am-topbar-btn:hover {
-    border-color: transparent;
+    background: url(https://i.loli.net/2019/10/28/Z3pH7DbLilhI1EF.png) no-repeat !important;
 }
 
 .title {
-    color: transparent !important;
-    background-color: transparent;
-    background: url(https://i.loli.net/2019/11/08/x2OtPKBn3wSJ7fs.png) no-repeat !important;
-    height: 0 !important;
-    width: 100% !important;
-    background-size: 100% auto !important;
-    padding-bottom: 21.8% !important;
-}
-
-.title font {
-    color: transparent !important;
-}
-
-.glyphicon:hover {
-    background-color: transparent;
-}
-
-.glyphicon:hover {
-    border-color: #ffffff80;
+    color: #ffffff;
+    background-color: #fca18b;
 }
 
 .bg-info {
