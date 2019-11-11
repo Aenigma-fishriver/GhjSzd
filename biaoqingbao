@@ -5,156 +5,7 @@ $(document).ready(function() {
     var add = document.createElement("p");
     add.setAttribute("id", "yeDocarateDiv");
     select.before(add);
-    add.innerHTML =
-        '<a href="javascript:;" Onclick="$(&apos;#yeColor&apos;).toggle()">点我装扮叶楼（功能测试中）</a><br> <form id="yeColor" style="display: none;">  注释：变色功能中，刷新后一切会恢复原样，除非点保存然后发送。保存功能测试中。<a href="https://kuler.adobe.com" target="_blank">色彩搭配参考点我</a><br>选择颜色： <input type="color" id="ye_color"><p>   <select id="ye_decorate_select"><option >选择需要更改的样式</option>     <option value="ye_whole">界面整体变色</option>          <option value="ye_banner_shadow">banner阴影颜色</option>     <option value="ye_reply_font">回复文字颜色</option><br>     <option value="ye_name_time">昵称行颜色</option>     <option value="ye_block">分隔线颜色</option><br>     </select>  <button id="ye_decorate" type="button">预览</button><button id="ye_save_decorate" type="button">保存</button></p> </form>';
-    $("#ye_decorate").click(decorateYeUnSave);
-    $("#ye_save_decorate").click(decorateYe);
-    $("#yeColor").prepend("<p id='YeBackgroundDiv'></p>");
-    $("#YeBackgroundDiv").html("选择叶楼背景：" + yeBackgoundImageSelect);
-    $("#yeBackgroundImage").change(function() {
-        $("#wenbenkuang").val(
-            $("#wenbenkuang").val() +
-            "<st" +
-            "yle>body{background-attachment: fixed;background-image: url(" +
-            $("#yeBackgroundImage").val() +
-            ");background-size:100%;}</s" +
-            "tyle>"
-        );
-    });
-});
-
-function decorateYeUnSave() {
-    var ye_decorate_where = $("#ye_decorate_select").val();
-    var ye_color = $("#ye_color").val();
-    if (
-        ye_decorate_where == "" ||
-        ye_decorate_where == null ||
-        ye_color == "" ||
-        ye_color == null
-    ) {
-        return false;
-    } else {
-        var color = ye_color;
-        if (ye_decorate_where == "ye_whole") {
-            $(document).ready(function() {
-                $("span").css("cssText", "color:" + color + " !important");
-                $(".alert").css("cssText", "color:" + color + " !important");
-                $(".footer").css("cssText", "color:" + color + " !important");
-                $(".glyphicon").css("cssText", "color:" + color + " !important");
-                $(".authorinfo").css("cssText", "color:" + color + " !important");
-                $("hr").css("cssText", "color:" + color + " !important");
-                $(".text-success").css("cssText", "color:" + color + " !important");
-                $(".alart").css("cssText", "color:" + color + " !important");
-                $(".alart.alart-danger").css(
-                    "cssText",
-                    "color:" + color + " !important"
-                );
-                $(".am-form-group").css("cssText", "color:" + color + " !important");
-                $(".form-group").css("cssText", "color:" + color + " !important");
-                $("#file").css("cssText", "color:" + color + " !important");
-                $(".pull-right span").css("cssText", "color:" + color + " !important");
-                $(".pull-right a").css("cssText", "color:" + color + " !important");
-                $(".bg-info span a").css("cssText", "color:" + color + " !important");
-                $(".form-group a").css("cssText", "color:" + color + " !important");
-                $(".am-topbar-brand a").css(
-                    "cssText",
-                    "color:" + color + " !important"
-                );
-                $("hr").css(
-                    "cssText",
-                    "background:" + color + " !important;margin-top: 2px"
-                );
-            });
-        } else if (ye_decorate_where == "ye_banner_shadow") {
-            $(document).ready(function() {
-                $(".title").css("box-shadow", "0px 4px 7px " + color);
-            });
-        } else if (ye_decorate_where == "ye_reply_font") {
-            $(document).ready(function() {
-                $(".replybody").css("cssText", "color:" + color + " !important");
-            });
-        } else if (ye_decorate_where == "ye_name_time") {
-            $(document).ready(function() {
-                $(".authorinfo").css("cssText", "color:" + color + " !important");
-                $("div.authorinfo > div > span:nth-child(1)").css(
-                    "cssText",
-                    "color:" + color + " !important"
-                );
-                $(".group_0+span").css("cssText", "color:" + color + " !important");
-            });
-        } else if (ye_decorate_where == "ye_block") {
-            $(document).ready(function() {
-                $("hr").css(
-                    "cssText",
-                    "background:" + color + " !important;margin-top: 2px"
-                );
-            });
-        }
-    }
-}
-
-function decorateYe() {
-    var color_whole = $("span").css("color");
-    var save =
-        "<s" +
-        "tyle>span{color:" +
-        $("span").css("color") +
-        " !important;}a{color:" +
-        $("a").css("color") +
-        " !important;}.glyphicon{color:" +
-        $(".glyphicon").css("color") +
-        ";}.authorinfo{color:" +
-        $(".authorinfo").css("color") +
-        ";}div.authorinfo > div > span:nth-child(1){color:" +
-        $("div.authorinfo > div > span:nth-child(1)").css("color") +
-        " !important}.group_0+span{color:" +
-        $(".group_0+span").css("color") +
-        " !important}hr{background :" +
-        $("hr").css("background") +
-        ";}.text-success{color:" +
-        $(".text-success").css("color") +
-        ";}.alert{color:" +
-        $(".alert").css("color") +
-        "}.footer{color:" +
-        $(".footer").css("color") +
-        " !important;}.am-form-group{color:" +
-        $(".am-form-group").css("color") +
-        "}.form-group{color:" +
-        $(".form-group").css("color") +
-        "}#file{color:" +
-        $("#file").css("color") +
-        "}.title{box-shadow:" +
-        $(".title").css("box-shadow") +
-        ";}.replybody{color:" +
-        $(".replybody").css("color") +
-        " !important;}</s" +
-        "tyle>";
-    $("#wenbenkuang").val($("#wenbenkuang").val() + save);
-}
-
-function decorateYeForFans() {}
-var yeBackgoundImageSelect =
-    '<select id="yeBackgroundImage"><option>选择背景图片</option><option value="https://i.loli.net/2019/09/20/z3TiaodfSY5ZXJw.jpg ">红龙叶</option>	<option value="https://i.loli.net/2019/10/04/98rEXRZtFuGI2vN.jpg">青龙叶</option>	<option value="https://i.loli.net/2019/09/21/SCvun9LDIB8qEha.jpg">曲奇叶</option>	<option value="https://i.loli.net/2019/09/21/F3QVC8IY1A5qr9s.png">青龙+曲奇叶混合</option>	<option value="https://i.loli.net/2019/09/21/xmcJ3HrF1z6N57D.jpg">红旗叶</option>	<option value="https://i.loli.net/2019/09/23/jcQf1X5ZEP3AbTm.jpg">红龙+王座拼接</option>	<option value="https://i.loli.net/2019/09/21/Clo2gyIPHENhKZ9.jpg">蛋糕叶</option>	<option value="https://i.loli.net/2019/09/23/tYfVJiaUBrOl3Wv.jpg">蓝色背景猫叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/723c569b09b8a042.jpg">李宁叶</option>	<option value="https://i.loli.net/2019/09/23/8X9duYs7UEbRHhj.jpg">红旗叶2</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/eccdfec8056f838d.jpg">左叶修底纹+红旗叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/e2097b41ff85c4a1.jpg">叶叶喝腊八粥</option>	<option value="https://i.loli.net/2019/09/24/mr5OTKXGpzDfxRj.jpg">快睡叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/3f2d2409d1e8a868.jpg">抱枕叶</option>	<option value="https://i.loli.net/2019/09/25/6xgaeNk5bpZqWSc.jpg">礼物叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/c97b0fed16f86299.jpg">起点叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/d11d4ca3e01c3568.jpg">王鹏叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/b8fb6fc1a0d05b85.jpg">睡觉喵叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/09d423b757254003.jpg">西装叶</option>	<option value="https://i.loli.net/2019/09/26/2hpZtzvHgyMYeq6.jpg">武侠叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/21f9e77375bdf0c0.jpg">七夕叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/c93a0432d2422dd1.jpg">第二季卫衣叶</option><option value="https://ftp.bmp.ovh/imgs/2019/10/9b984695f5061f67.jpg">万圣叶Q版</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/e36ec7b1a8f97583.jpg">生日壁纸叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/dc7c14a3773104da.jpg">水手叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/5d72233cd6d046de.jpg">除夕叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/a2b6c21c78201382.jpg">国庆Q版</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/406bb9c36be319da.jpg">生日会双叶</option>	<option value="https://i.loli.net/2019/10/01/DM4gmucvXIxhaEW.jpg">18中秋叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/0da05a117a44c4c0.jpg">19年国庆叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/f34306cec019e1b7.jpg">HE荒野打怪叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/4ba42c98702b2d19.jpg">元宵兔兔叶</option>	<option value="https://i.loli.net/2019/10/05/zZRX5eUjGBThDka.jpg">招财猫叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/dc50a5c8de236672.jpg">执事叶第一版</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/3958cba32cea7421.jpg">滑雪叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/c0059e76891da89c.jpg">十四版君莫笑</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/6cb2488a2d7e2f9a.jpg">端午粽叶</option>	<option value="https://i.loli.net/2019/10/19/bpwj2uYkWZRd1SE.jpg">猫树版兴欣叶</option>	<option value="https://i.loli.net/2019/10/11/X7EodrOKci2LATU.jpg">万圣叶正比版</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/4935d481c1fadca2.jpg">龙抬头叶</option>	<option value="https://i.loli.net/2019/10/14/ksVn1YfTFKNBeCX.jpg">等身抱枕叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/cb838f203b079f1e.jpg">粘土叶</option>	<option value="https://i.loli.net/2019/10/16/9bPEMSkVeyzwUrh.gif">掉落的起点叶</option>	<option value="https://i.loli.net/2019/10/17/kUIJ56aReiMYNf9.gif">wink叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/fb5f2d88521e95e3.jpg">姜饼叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/c689a7e40e9dce8d.jpg">古剑联动叶</option>	<option value="输入图片的http地址">自己新增</option></select>';
-
-//右下角对话内容
-var ye_saying = [
-    "没收小黄书",
-    "早点睡",
-    "荣耀不是一个人的游戏",
-    "<img src=https://i.loli.net/2019/11/05/cYl4r5o1sBFd6vH.gif>",
-    "<img src= https://ftp.bmp.ovh/imgs/2019/11/351c5a6b29b354d6.png>"
-];
-//右下角对话函数
-function showMessage(text, timeout) {
-    if (Array.isArray(text))
-        text = text[Math.floor(Math.random() * text.length + 1) - 1];
-    $(".ye_sayings").stop();
-    $(".ye_sayings")
-        .html(text)
-        .fadeTo(200, 1);
-    if (timeout === null) timeout = 5000;
-    hideMessage(timeout);
-}
+   
 
 function hideMessage(timeout) {
     $(".ye_sayings")
@@ -478,11 +329,11 @@ $(document)
     .on("pjax:end", NProgress.done)
     .on("pjax:complete", MyYe);
 
-function MyYe() {
+function BiaoQing() {
     var newOption0 = document.getElementsByClassName("form-group");
     var newOption = newOption0[0];
     var select = document.createElement("label");
-    var t = document.createTextNode("忧郁小猫猫");
+    var t = document.createTextNode("🌸🐰专属");
     select.setAttribute("class", "radio-inline");
     inputText = document.createElement("input");
     inputText.setAttribute("type", "radio");
@@ -493,6 +344,35 @@ function MyYe() {
     select.onclick = function() {
         var emotlist = [
             "<option></option>",
+            '<option value="<a href=&quot;链接&quot; target=&quot;_blank&quot;>点我就看</a>">点就看代码</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/28/CV2Y7mgfPihEHSw.jpg>">兔-不接受反驳</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/28/c3fUIkh9KZ5LyDi.jpg>">兔-久贵妃</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/28/rLuiUsZwS43DVhH.jpg>">兔-搞啥啊</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/pZUHPfyiFGvhlNA.jpg>">兔-白眼警告</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/XAaZBoJHr8MKl2d.jpg>">兔-这里有问题</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/V8vtdxUfuOJqb47.jpg>">兔-冷漠</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/Rwhqg42fHXl8osz.jpg>">兔-迷惑</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/dOo9nLufCjB1qUP.jpg>">兔-在线吃人</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/Lmc8N3QTtiOJlUb.gif>">兔-气到昏厥</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/On3hi6oeY9fFqN2.gif>">兔-哈哈哈</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/06/iv2fjc6G91PY7xh.gif>">兔-知识盲点</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/04/pvAJ1ug7jw9CNRt.gif>">兔-抱膝等</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/08/UYNJfIkeGA1qd4T.gif>">兔-乖乖</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/28/cuJ7tI13rpUy6Qg.jpg>">花-问号</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/28/qX7bweSf2jaYQKH.jpg>">花-诺言就是天使</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/lMb6dN5pa8A9gzk.gif>">花-比心1</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/iDLA6fjyP79OZMo.gif>">花-比心2</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/dkNMv4XQByUsqpR.gif>">花-飞吻</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/5BcKV6h7rdCTZe3.gif>">花-变态</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/LDh3M9eYKvxXzVu.gif>">花-做人要膨胀一点</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/Pm4LjS32Dl7vgc8.gif>">花-完美</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/10/dD7mtTkyfCKIbw6.gif>">花-笔给你</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/08/VW2nmP1sCN86DEp.gif>">花-rwkk</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/06/9duQe4lKwaqn2Jc.gif>">花-哎哟</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/NtfHk71Lp4DUXcZ.jpg>">花兔-背我鸡</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/29/wZ8MhdYHLkatIuS.jpg>">花兔-暗中观察</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/06/Zyz5NPYfW6Fibja.gif>">花兔-开心</option>',
+            '<option value="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊">啊×n</option>'
             '<option value="<img src=https://i.loli.net/2019/10/27/lF9QtjMuP8dNXbS.png>">激动</option>',
             '<option value="<img src=https://i.loli.net/2019/10/27/TYyuIAPOUXJcpCD.png>">叶叶竖两个大拇指</option>',
             '<option value="<img src=https://i.loli.net/2019/10/27/dp3RFBP64rgHCTE.png>">无辜</option>',
@@ -524,8 +404,7 @@ function MyYe() {
             '<option value="<a href=&quot;链接&quot; target=&quot;_blank&quot;>点我就看XXX</a>">超链接代码</option>',
             '<option value="<font class=&quot;xiu&quot;>文字</font>">金色渐变字代码</option>',
             '<option value="<font class=&quot;zheyingbu&quot;>文字</font>">遮影步字代码</option>',
-            '<option value="&lt;script>ye_call_board=&apos;文字或链接/图片代码&apos;&lt;/script>">给叶楼加公告</option>',
-            '<option value="&lt;script>ye_saying.push(&apos;请输入你要添加的对话&apos;);&lt;/script>">添加右下角对话</option>'
+            '<option value="&lt;script>ye_call_board=&apos;文字或链接/图片代码&apos;&lt;/script>">给叶楼加公告</option>'
         ];
         $("#emot").empty();
         for (i in emotlist) {
