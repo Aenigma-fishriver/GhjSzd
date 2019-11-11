@@ -1,0 +1,549 @@
+.alert-danger {
+    border-color: transparent;
+}
+
+.alert-danger {
+    background: transparent;
+}
+
+.bg-info {
+    background-color: transparent;
+}
+
+.group_0 {
+    color: transparent !important;
+    background: url(https://i.loli.net/2019/10/21/elorKWgY97UkxNv.png) no-repeat !important;
+}
+
+.glyphicon {
+    background-color: transparent;
+}
+
+.glyphicon {
+    border-color: #ffffff80;
+}
+
+.am-topbar {
+    background: transparent;
+}
+
+.am-topbar-btn {
+    background-color: transparent;
+}
+
+.am-topbar-btn {
+    border-color: transparent;
+}
+
+.am-topbar-btn:hover {
+    background-color: transparent;
+}
+
+.am-topbar-btn:hover {
+    border-color: transparent;
+}
+
+.title {
+    color: transparent !important;
+    background-color: transparent;
+    background: url(https://i.loli.net/2019/11/08/x2OtPKBn3wSJ7fs.png) no-repeat !important;
+    height: 0 !important;
+    width: 100% !important;
+    background-size: 100% auto !important;
+    padding-bottom: 21.8% !important;
+}
+
+.title font {
+    color: transparent !important;
+}
+
+.glyphicon:hover {
+    background-color: transparent;
+}
+
+.glyphicon:hover {
+    border-color: #ffffff80;
+}
+
+.bg-info {
+    background-color: transparent;
+}
+
+.replybody a {
+    color: #ffa500 !important;
+}
+
+a:hover {
+    color: #ff0000 !important;
+}
+
+center a:hover {
+    color: #ff0000 !important;
+}
+
+center span {
+    color: #000000 !important;
+}
+
+.group_0 {
+    color: transparent !important;
+}
+
+#ye_decorate {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: 5px 2px 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #d9eef7;
+    border: solid 1px #0076a3;
+    background: #0095cd;
+    background: -webkit-gradient( linear, left top, left bottom, from(#0095cc), to(#00678e));
+    background: -moz-linear-gradient(top, #00adee, #00678e);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#00678e');
+}
+
+#ye_decorate:hover {
+    background: #007ead;
+    background: -webkit-gradient( linear, left top, left bottom, from(#00678e), to(#0095cc));
+    background: -moz-linear-gradient(top, #00678e, #0095cc);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00678e', endColorstr='#0095cc');
+}
+
+#ye_save_decorate {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: 5px 2px 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #d9eef7;
+    border: solid 1px #0076a3;
+    background: #0095cd;
+    background: -webkit-gradient( linear, left top, left bottom, from(#0095cc), to(#00678e));
+    background: -moz-linear-gradient(top, #00adee, #00678e);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#00678e');
+}
+
+#ye_save_decorate:hover {
+    background: #007ead;
+    background: -webkit-gradient( linear, left top, left bottom, from(#00678e), to(#0095cc));
+    background: -moz-linear-gradient(top, #00678e, #0095cc);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00678e', endColorstr='#0095cc');
+}
+
+.zheyingbu {
+    color: transparent;
+}
+
+.zheyingbu:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 900px) {
+    .yeLive {
+        display: none !important;
+    }
+    .ye_sayings {
+        display: none !important;
+    }
+}
+
+.yeLive span {
+    display: block;
+    position: fixed;
+    z-index: 9999999999;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(https://ftp.bmp.ovh/imgs/2019/11/6bddc7a452775372.png);
+    background-repeat: no-repeat;
+    _background: none;
+    -webkit-animation: ball-x 3s linear 2s infinite;
+    -moz-animation: ball-x 3s linear 2s infinite;
+    animation: ball-x 3s linear 2s infinite;
+    -webkit-transform-origin: bottom center;
+    -moz-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+
+.yeLive .yeLiveDot {
+    width: 200px;
+    height: 150px;
+    right: 0px;
+    border: 0px solid #fff;
+}
+
+.yeLive . @keyframes ball-x {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes ball-x {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(5deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(-5deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes ball-x {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    25% {
+        -moz-transform: rotate(5deg);
+    }
+    50% {
+        -moz-transform: rotate(0deg);
+    }
+    75% {
+        -moz-transform: rotate(-5deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+}
+
+.ye_sayings {
+    opacity: 0;
+    width: 200px;
+    height: 70px;
+    margin: 10px 0px;
+    right: 0px;
+    padding: 5px 10px;
+    border: 1px solid rgba(224, 186, 140, 0.62);
+    position: fixed;
+    bottom: 120px;
+    border-radius: 12px;
+    background-color: rgba(236, 217, 188, 0.5);
+    box-shadow: 0 3px 15px 2px rgba(191, 158, 118, 0.2);
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+}
+
+.xiu a {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #5a4d30), color-stop(0.15, #918157), color-stop(0.3, #cfa520), color-stop(0.45, #5a4d30), color-stop(0.6, #cfa520), color-stop(0.75, #b4a120), color-stop(0.9, #bfa66e), color-stop(1, #cfa520)) !important;
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text !important;
+    -ms-background-clip: text !important;
+}
+
+.xiu {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #5a4d30), color-stop(0.15, #918157), color-stop(0.3, #cfa520), color-stop(0.45, #5a4d30), color-stop(0.6, #cfa520), color-stop(0.75, #b4a120), color-stop(0.9, #bfa66e), color-stop(1, #cfa520)) !important;
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text !important;
+    -ms-background-clip: text !important;
+}
+
+.xiu a {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #5a4d30), color-stop(0.15, #918157), color-stop(0.3, #cfa520), color-stop(0.45, #5a4d30), color-stop(0.6, #cfa520), color-stop(0.75, #b4a120), color-stop(0.9, #bfa66e), color-stop(1, #cfa520)) !important;
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text !important;
+    -ms-background-clip: text !important;
+}
+
+.ye {
+    background-image: linear-gradient( 148deg, rgba(0, 0, 0, 1) 0%, rgba(231, 76, 60, 1) 100%) !important;
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text !important;
+    -ms-background-clip: text !important;
+}
+
+.ye a {
+    background-image: linear-gradient( 148deg, rgba(0, 0, 0, 1) 0%, rgba(231, 76, 60, 1) 100%) !important;
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text !important;
+    -ms-background-clip: text !important;
+}
+
+
+/*进度条*/
+
+#nprogress {
+    pointer-events: none;
+}
+
+#nprogress .bar {
+    background: #29d;
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+#nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+    opacity: 1;
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
+}
+
+#nprogress .spinner {
+    display: block;
+    position: fixed;
+    z-index: 1031;
+    top: 15px;
+    right: 15px;
+}
+
+#nprogress .spinner-icon {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: solid 2px transparent;
+    border-top-color: #29d;
+    border-left-color: #29d;
+    border-radius: 50%;
+    -webkit-animation: nprogress-spinner 400ms linear infinite;
+    animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+    overflow: hidden;
+    position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+    position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes nprogress-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*头像*/
+
+.image1 {
+    background: url(https://i.loli.net/2019/09/19/5WsBDCpfVi4JI7A.jpg) no-repeat !important;
+}
+
+.image2 {
+    background: url(https://i.loli.net/2019/09/19/bB7gRpHhStWJKPy.jpg) no-repeat !important;
+}
+
+.image3 {
+    background: url(https://i.loli.net/2019/09/19/h4rX6fdR3eqJicv.jpg) no-repeat !important;
+}
+
+.image4 {
+    background: url(https://i.loli.net/2019/09/19/HVBPaNIC15jK9Sk.jpg) no-repeat !important;
+}
+
+.image5 {
+    background: url(https://i.loli.net/2019/09/20/yemLc4pnD3GzOIl.png) no-repeat !important;
+}
+
+.image6 {
+    background: url(https://i.loli.net/2019/09/19/jF8RrW1Pwn9vhSL.jpg) no-repeat !important;
+}
+
+.image7 {
+    background: url(https://i.loli.net/2019/09/19/plK3rxMQ5csCNSP.jpg) no-repeat !important;
+}
+
+.image8 {
+    background: url(https://i.loli.net/2019/09/19/yrMBPx9sEtScQ21.jpg) no-repeat !important;
+}
+
+.image9 {
+    background: url(https://i.loli.net/2019/09/19/r9mcRxg6QFIEs5u.jpg) no-repeat !important;
+}
+
+.image10 {
+    background: url(https://i.loli.net/2019/09/19/3aJXu7oncfYMBhQ.jpg) no-repeat !important;
+}
+
+.image11 {
+    background: url(https://i.loli.net/2019/09/20/hPlbdsHgtX51E43.png) no-repeat !important;
+}
+
+.image12 {
+    background: url(https://i.loli.net/2019/09/19/oIyXN2vuw6Rz4WB.png) no-repeat !important;
+}
+
+.image13 {
+    background: url(https://i.loli.net/2019/09/19/ZaiLBsxwMfD2d6X.jpg) no-repeat !important;
+}
+
+.image14 {
+    background: url(https://i.loli.net/2019/09/20/nSwOMN32lTyaXVt.png) no-repeat !important;
+}
+
+.image15 {
+    background: url(https://i.loli.net/2019/09/20/8mbr65lVCtSEcpA.png) no-repeat !important;
+}
+
+.image16 {
+    background: url(https://i.loli.net/2019/09/20/OD5bqdGBpRUyFsr.png) no-repeat !important;
+}
+
+.image17 {
+    background: url(https://i.loli.net/2019/09/20/KZvuTxJfphct3A4.png) no-repeat !important;
+}
+
+.image18 {
+    background: url(https://i.loli.net/2019/09/20/1LiezKrdcJvUqml.png) no-repeat !important;
+}
+
+.image19 {
+    background: url(https://i.loli.net/2019/09/20/34G5xzbnKAlcumY.png) no-repeat !important;
+}
+
+.image20 {
+    background: url(https://i.loli.net/2019/09/25/YxTDFy3NlcKG7nC.jpg) no-repeat !important;
+}
+
+.image21 {
+    background: url(https://i.loli.net/2019/09/20/SQR9Ayw3rLbVH7z.png) no-repeat !important;
+}
+
+.image22 {
+    background: url(https://i.loli.net/2019/09/20/Tq2vRfBxJPpyLnl.png) no-repeat !important;
+}
+
+.image23 {
+    background: url(https://i.loli.net/2019/09/20/SovxcdiEtl2s1DK.png) no-repeat !important;
+}
+
+.image24 {
+    background: url(https://i.loli.net/2019/09/20/2o8GHzFtrvc3Cmw.png) no-repeat !important;
+}
+
+.image25 {
+    background: url(https://i.loli.net/2019/09/20/SQWt7L5Gf1zCkoR.png) no-repeat !important;
+}
+
+.image26 {
+    background: url(https://i.loli.net/2019/09/20/P4cdWluBtXoVAM5.png) no-repeat !important;
+}
+
+.image27 {
+    background: url(https://i.loli.net/2019/09/25/SsrblfmAyNYQDuP.jpg) no-repeat !important;
+}
+
+.image28 {
+    background: url(https://i.loli.net/2019/09/19/plK3rxMQ5csCNSP.jpg) no-repeat !important;
+}
+
+.image29 {
+    background: url(https://i.loli.net/2019/09/19/yrMBPx9sEtScQ21.jpg) no-repeat !important;
+}
+
+.image30 {
+    background: url(https://i.loli.net/2019/09/19/ZaiLBsxwMfD2d6X.jpg) no-repeat !important;
+}
+
+.image31 {
+    background: url(https://i.loli.net/2019/09/20/nSwOMN32lTyaXVt.png) no-repeat !important;
+}
+
+.image32 {
+    background: url(https://i.loli.net/2019/09/20/8mbr65lVCtSEcpA.png) no-repeat !important;
+}
+
+.image33 {
+    background: url(https://i.loli.net/2019/09/20/OD5bqdGBpRUyFsr.png) no-repeat !important;
+}
+
+.image34 {
+    background: url(https://i.loli.net/2019/10/21/AsyKF28uIMHh3nJ.png) no-repeat !important;
+}
+
+.image35 {
+    background: url(https://i.loli.net/2019/09/20/34G5xzbnKAlcumY.png) no-repeat !important;
+}
+
+.image36 {
+    background: url(https://i.loli.net/2019/09/25/YxTDFy3NlcKG7nC.jpg) no-repeat !important;
+}
+
+.image37 {
+    background: url(https://i.loli.net/2019/09/20/Tq2vRfBxJPpyLnl.png) no-repeat !important;
+}
+
+.image38 {
+    background: url(https://i.loli.net/2019/09/20/SovxcdiEtl2s1DK.png) no-repeat !important;
+}
+
+.image39 {
+    background: url(https://i.loli.net/2019/10/21/PDCtVobEe1YFq8x.gif) no-repeat !important;
+}
+
+.image40 {
+    background: url(https://i.loli.net/2019/10/21/lgbjeI1GEzF6xhP.png) no-repeat !important;
+}
