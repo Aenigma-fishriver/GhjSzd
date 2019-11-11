@@ -1,0 +1,668 @@
+$(document).ready(function() {
+    MyYe();
+    decorateYeForFans();
+    var select = document.getElementById("duqian");
+    var add = document.createElement("p");
+    add.setAttribute("id", "yeDocarateDiv");
+    select.before(add);
+    add.innerHTML =
+        '<a href="javascript:;" Onclick="$(&apos;#yeColor&apos;).toggle()">点我装扮叶楼（功能测试中）</a><br> <form id="yeColor" style="display: none;">  注释：变色功能中，刷新后一切会恢复原样，除非点保存然后发送。保存功能测试中。<a href="https://kuler.adobe.com" target="_blank">色彩搭配参考点我</a><br>选择颜色： <input type="color" id="ye_color"><p>   <select id="ye_decorate_select"><option >选择需要更改的样式</option>     <option value="ye_whole">界面整体变色</option>          <option value="ye_banner_shadow">banner阴影颜色</option>     <option value="ye_reply_font">回复文字颜色</option><br>     <option value="ye_name_time">昵称行颜色</option>     <option value="ye_block">分隔线颜色</option><br>     </select>  <button id="ye_decorate" type="button">预览</button><button id="ye_save_decorate" type="button">保存</button></p> </form>';
+    $("#ye_decorate").click(decorateYeUnSave);
+    $("#ye_save_decorate").click(decorateYe);
+    $("#yeColor").prepend("<p id='YeBackgroundDiv'></p>");
+    $("#YeBackgroundDiv").html("选择叶楼背景：" + yeBackgoundImageSelect);
+    $("#yeBackgroundImage").change(function() {
+        $("#wenbenkuang").val(
+            $("#wenbenkuang").val() +
+            "<st" +
+            "yle>body{background-attachment: fixed;background-image: url(" +
+            $("#yeBackgroundImage").val() +
+            ");background-size:100%;}</s" +
+            "tyle>"
+        );
+    });
+});
+
+function decorateYeUnSave() {
+    var ye_decorate_where = $("#ye_decorate_select").val();
+    var ye_color = $("#ye_color").val();
+    if (
+        ye_decorate_where == "" ||
+        ye_decorate_where == null ||
+        ye_color == "" ||
+        ye_color == null
+    ) {
+        return false;
+    } else {
+        var color = ye_color;
+        if (ye_decorate_where == "ye_whole") {
+            $(document).ready(function() {
+                $("span").css("cssText", "color:" + color + " !important");
+                $(".alert").css("cssText", "color:" + color + " !important");
+                $(".footer").css("cssText", "color:" + color + " !important");
+                $(".glyphicon").css("cssText", "color:" + color + " !important");
+                $(".authorinfo").css("cssText", "color:" + color + " !important");
+                $("hr").css("cssText", "color:" + color + " !important");
+                $(".text-success").css("cssText", "color:" + color + " !important");
+                $(".alart").css("cssText", "color:" + color + " !important");
+                $(".alart.alart-danger").css(
+                    "cssText",
+                    "color:" + color + " !important"
+                );
+                $(".am-form-group").css("cssText", "color:" + color + " !important");
+                $(".form-group").css("cssText", "color:" + color + " !important");
+                $("#file").css("cssText", "color:" + color + " !important");
+                $(".pull-right span").css("cssText", "color:" + color + " !important");
+                $(".pull-right a").css("cssText", "color:" + color + " !important");
+                $(".bg-info span a").css("cssText", "color:" + color + " !important");
+                $(".form-group a").css("cssText", "color:" + color + " !important");
+                $(".am-topbar-brand a").css(
+                    "cssText",
+                    "color:" + color + " !important"
+                );
+                $("hr").css(
+                    "cssText",
+                    "background:" + color + " !important;margin-top: 2px"
+                );
+            });
+        } else if (ye_decorate_where == "ye_banner_shadow") {
+            $(document).ready(function() {
+                $(".title").css("box-shadow", "0px 4px 7px " + color);
+            });
+        } else if (ye_decorate_where == "ye_reply_font") {
+            $(document).ready(function() {
+                $(".replybody").css("cssText", "color:" + color + " !important");
+            });
+        } else if (ye_decorate_where == "ye_name_time") {
+            $(document).ready(function() {
+                $(".authorinfo").css("cssText", "color:" + color + " !important");
+                $("div.authorinfo > div > span:nth-child(1)").css(
+                    "cssText",
+                    "color:" + color + " !important"
+                );
+                $(".group_0+span").css("cssText", "color:" + color + " !important");
+            });
+        } else if (ye_decorate_where == "ye_block") {
+            $(document).ready(function() {
+                $("hr").css(
+                    "cssText",
+                    "background:" + color + " !important;margin-top: 2px"
+                );
+            });
+        }
+    }
+}
+
+function decorateYe() {
+    var color_whole = $("span").css("color");
+    var save =
+        "<s" +
+        "tyle>span{color:" +
+        $("span").css("color") +
+        " !important;}a{color:" +
+        $("a").css("color") +
+        " !important;}.glyphicon{color:" +
+        $(".glyphicon").css("color") +
+        ";}.authorinfo{color:" +
+        $(".authorinfo").css("color") +
+        ";}div.authorinfo > div > span:nth-child(1){color:" +
+        $("div.authorinfo > div > span:nth-child(1)").css("color") +
+        " !important}.group_0+span{color:" +
+        $(".group_0+span").css("color") +
+        " !important}hr{background :" +
+        $("hr").css("background") +
+        ";}.text-success{color:" +
+        $(".text-success").css("color") +
+        ";}.alert{color:" +
+        $(".alert").css("color") +
+        "}.footer{color:" +
+        $(".footer").css("color") +
+        " !important;}.am-form-group{color:" +
+        $(".am-form-group").css("color") +
+        "}.form-group{color:" +
+        $(".form-group").css("color") +
+        "}#file{color:" +
+        $("#file").css("color") +
+        "}.title{box-shadow:" +
+        $(".title").css("box-shadow") +
+        ";}.replybody{color:" +
+        $(".replybody").css("color") +
+        " !important;}</s" +
+        "tyle>";
+    $("#wenbenkuang").val($("#wenbenkuang").val() + save);
+}
+
+function decorateYeForFans() {}
+var yeBackgoundImageSelect =
+    '<select id="yeBackgroundImage"><option>选择背景图片</option><option value="https://i.loli.net/2019/09/20/z3TiaodfSY5ZXJw.jpg ">红龙叶</option>	<option value="https://i.loli.net/2019/10/04/98rEXRZtFuGI2vN.jpg">青龙叶</option>	<option value="https://i.loli.net/2019/09/21/SCvun9LDIB8qEha.jpg">曲奇叶</option>	<option value="https://i.loli.net/2019/09/21/F3QVC8IY1A5qr9s.png">青龙+曲奇叶混合</option>	<option value="https://i.loli.net/2019/09/21/xmcJ3HrF1z6N57D.jpg">红旗叶</option>	<option value="https://i.loli.net/2019/09/23/jcQf1X5ZEP3AbTm.jpg">红龙+王座拼接</option>	<option value="https://i.loli.net/2019/09/21/Clo2gyIPHENhKZ9.jpg">蛋糕叶</option>	<option value="https://i.loli.net/2019/09/23/tYfVJiaUBrOl3Wv.jpg">蓝色背景猫叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/723c569b09b8a042.jpg">李宁叶</option>	<option value="https://i.loli.net/2019/09/23/8X9duYs7UEbRHhj.jpg">红旗叶2</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/eccdfec8056f838d.jpg">左叶修底纹+红旗叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/e2097b41ff85c4a1.jpg">叶叶喝腊八粥</option>	<option value="https://i.loli.net/2019/09/24/mr5OTKXGpzDfxRj.jpg">快睡叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/3f2d2409d1e8a868.jpg">抱枕叶</option>	<option value="https://i.loli.net/2019/09/25/6xgaeNk5bpZqWSc.jpg">礼物叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/c97b0fed16f86299.jpg">起点叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/d11d4ca3e01c3568.jpg">王鹏叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/b8fb6fc1a0d05b85.jpg">睡觉喵叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/09d423b757254003.jpg">西装叶</option>	<option value="https://i.loli.net/2019/09/26/2hpZtzvHgyMYeq6.jpg">武侠叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/21f9e77375bdf0c0.jpg">七夕叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/c93a0432d2422dd1.jpg">第二季卫衣叶</option><option value="https://ftp.bmp.ovh/imgs/2019/10/9b984695f5061f67.jpg">万圣叶Q版</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/e36ec7b1a8f97583.jpg">生日壁纸叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/dc7c14a3773104da.jpg">水手叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/09/5d72233cd6d046de.jpg">除夕叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/a2b6c21c78201382.jpg">国庆Q版</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/406bb9c36be319da.jpg">生日会双叶</option>	<option value="https://i.loli.net/2019/10/01/DM4gmucvXIxhaEW.jpg">18中秋叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/0da05a117a44c4c0.jpg">19年国庆叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/f34306cec019e1b7.jpg">HE荒野打怪叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/4ba42c98702b2d19.jpg">元宵兔兔叶</option>	<option value="https://i.loli.net/2019/10/05/zZRX5eUjGBThDka.jpg">招财猫叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/dc50a5c8de236672.jpg">执事叶第一版</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/3958cba32cea7421.jpg">滑雪叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/c0059e76891da89c.jpg">十四版君莫笑</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/6cb2488a2d7e2f9a.jpg">端午粽叶</option>	<option value="https://i.loli.net/2019/10/19/bpwj2uYkWZRd1SE.jpg">猫树版兴欣叶</option>	<option value="https://i.loli.net/2019/10/11/X7EodrOKci2LATU.jpg">万圣叶正比版</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/4935d481c1fadca2.jpg">龙抬头叶</option>	<option value="https://i.loli.net/2019/10/14/ksVn1YfTFKNBeCX.jpg">等身抱枕叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/cb838f203b079f1e.jpg">粘土叶</option>	<option value="https://i.loli.net/2019/10/16/9bPEMSkVeyzwUrh.gif">掉落的起点叶</option>	<option value="https://i.loli.net/2019/10/17/kUIJ56aReiMYNf9.gif">wink叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/fb5f2d88521e95e3.jpg">姜饼叶</option>	<option value="https://ftp.bmp.ovh/imgs/2019/10/c689a7e40e9dce8d.jpg">古剑联动叶</option>	<option value="输入图片的http地址">自己新增</option></select>';
+
+//右下角对话内容
+var ye_saying = [
+    "没收小黄书",
+    "早点睡",
+    "荣耀不是一个人的游戏",
+    "<img src=https://i.loli.net/2019/11/05/cYl4r5o1sBFd6vH.gif>",
+    "<img src= https://ftp.bmp.ovh/imgs/2019/11/351c5a6b29b354d6.png>"
+];
+//右下角对话函数
+function showMessage(text, timeout) {
+    if (Array.isArray(text))
+        text = text[Math.floor(Math.random() * text.length + 1) - 1];
+    $(".ye_sayings").stop();
+    $(".ye_sayings")
+        .html(text)
+        .fadeTo(200, 1);
+    if (timeout === null) timeout = 5000;
+    hideMessage(timeout);
+}
+
+function hideMessage(timeout) {
+    $(".ye_sayings")
+        .stop()
+        .css("opacity", 1);
+    if (timeout === null) timeout = 5000;
+    $(".ye_sayings")
+        .delay(timeout)
+        .fadeTo(200, 0);
+}
+//进度条
+(function(root, factory) {
+    if (typeof define === "function" && define.amd) {
+        define(factory);
+    } else if (typeof exports === "object") {
+        module.exports = factory();
+    } else {
+        root.NProgress = factory();
+    }
+})(this, function() {
+    var NProgress = {};
+    NProgress.version = "0.2.0";
+    var Settings = (NProgress.settings = {
+        minimum: 0.08,
+        easing: "ease",
+        positionUsing: "",
+        speed: 200,
+        trickle: true,
+        trickleRate: 0.02,
+        trickleSpeed: 800,
+        showSpinner: true,
+        barSelector: '[role="bar"]',
+        spinnerSelector: '[role="spinner"]',
+        parent: "body",
+        template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+    });
+    NProgress.configure = function(options) {
+        var key, value;
+        for (key in options) {
+            value = options[key];
+            if (value !== undefined && options.hasOwnProperty(key))
+                Settings[key] = value;
+        }
+        return this;
+    };
+    NProgress.status = null;
+    NProgress.set = function(n) {
+        var started = NProgress.isStarted();
+        n = clamp(n, Settings.minimum, 1);
+        NProgress.status = n === 1 ? null : n;
+        var progress = NProgress.render(!started),
+            bar = progress.querySelector(Settings.barSelector),
+            speed = Settings.speed,
+            ease = Settings.easing;
+        progress.offsetWidth;
+        queue(function(next) {
+            if (Settings.positionUsing === "")
+                Settings.positionUsing = NProgress.getPositioningCSS();
+            css(bar, barPositionCSS(n, speed, ease));
+            if (n === 1) {
+                css(progress, {
+                    transition: "none",
+                    opacity: 1
+                });
+                progress.offsetWidth;
+                setTimeout(function() {
+                    css(progress, {
+                        transition: "all " + speed + "ms linear",
+                        opacity: 0
+                    });
+                    setTimeout(function() {
+                        NProgress.remove();
+                        next();
+                    }, speed);
+                }, speed);
+            } else {
+                setTimeout(next, speed);
+            }
+        });
+        return this;
+    };
+    NProgress.isStarted = function() {
+        return typeof NProgress.status === "number";
+    };
+    NProgress.start = function() {
+        if (!NProgress.status) NProgress.set(0);
+        var work = function() {
+            setTimeout(function() {
+                if (!NProgress.status) return;
+                NProgress.trickle();
+                work();
+            }, Settings.trickleSpeed);
+        };
+        if (Settings.trickle) work();
+        return this;
+    };
+    NProgress.done = function(force) {
+        if (!force && !NProgress.status) return this;
+        return NProgress.inc(0.3 + 0.5 * Math.random()).set(1);
+    };
+    NProgress.inc = function(amount) {
+        var n = NProgress.status;
+        if (!n) {
+            return NProgress.start();
+        } else {
+            if (typeof amount !== "number") {
+                amount = (1 - n) * clamp(Math.random() * n, 0.1, 0.95);
+            }
+            n = clamp(n + amount, 0, 0.994);
+            return NProgress.set(n);
+        }
+    };
+    NProgress.trickle = function() {
+        return NProgress.inc(Math.random() * Settings.trickleRate);
+    };
+    (function() {
+        var initial = 0,
+            current = 0;
+        NProgress.promise = function($promise) {
+            if (!$promise || $promise.state() === "resolved") {
+                return this;
+            }
+            if (current === 0) {
+                NProgress.start();
+            }
+            initial++;
+            current++;
+            $promise.always(function() {
+                current--;
+                if (current === 0) {
+                    initial = 0;
+                    NProgress.done();
+                } else {
+                    NProgress.set((initial - current) / initial);
+                }
+            });
+            return this;
+        };
+    })();
+    NProgress.render = function(fromStart) {
+        if (NProgress.isRendered()) return document.getElementById("nprogress");
+        addClass(document.documentElement, "nprogress-busy");
+        var progress = document.createElement("div");
+        progress.id = "nprogress";
+        progress.innerHTML = Settings.template;
+        var bar = progress.querySelector(Settings.barSelector),
+            perc = fromStart ? "-100" : toBarPerc(NProgress.status || 0),
+            parent = document.querySelector(Settings.parent),
+            spinner;
+        css(bar, {
+            transition: "all 0 linear",
+            transform: "translate3d(" + perc + "%,0,0)"
+        });
+        if (!Settings.showSpinner) {
+            spinner = progress.querySelector(Settings.spinnerSelector);
+            spinner && removeElement(spinner);
+        }
+        if (parent != document.body) {
+            addClass(parent, "nprogress-custom-parent");
+        }
+        parent.appendChild(progress);
+        return progress;
+    };
+    NProgress.remove = function() {
+        removeClass(document.documentElement, "nprogress-busy");
+        removeClass(
+            document.querySelector(Settings.parent),
+            "nprogress-custom-parent"
+        );
+        var progress = document.getElementById("nprogress");
+        progress && removeElement(progress);
+    };
+    NProgress.isRendered = function() {
+        return !!document.getElementById("nprogress");
+    };
+    NProgress.getPositioningCSS = function() {
+        var bodyStyle = document.body.style;
+        var vendorPrefix =
+            "WebkitTransform" in bodyStyle ?
+            "Webkit" :
+            "MozTransform" in bodyStyle ?
+            "Moz" :
+            "msTransform" in bodyStyle ?
+            "ms" :
+            "OTransform" in bodyStyle ?
+            "O" :
+            "";
+        if (vendorPrefix + "Perspective" in bodyStyle) {
+            return "translate3d";
+        } else if (vendorPrefix + "Transform" in bodyStyle) {
+            return "translate";
+        } else {
+            return "margin";
+        }
+    };
+
+    function clamp(n, min, max) {
+        if (n < min) return min;
+        if (n > max) return max;
+        return n;
+    }
+
+    function toBarPerc(n) {
+        return (-1 + n) * 100;
+    }
+
+    function barPositionCSS(n, speed, ease) {
+        var barCSS;
+        if (Settings.positionUsing === "translate3d") {
+            barCSS = {
+                transform: "translate3d(" + toBarPerc(n) + "%,0,0)"
+            };
+        } else if (Settings.positionUsing === "translate") {
+            barCSS = {
+                transform: "translate(" + toBarPerc(n) + "%,0)"
+            };
+        } else {
+            barCSS = {
+                "margin-left": toBarPerc(n) + "%"
+            };
+        }
+        barCSS.transition = "all " + speed + "ms " + ease;
+        return barCSS;
+    }
+    var queue = (function() {
+        var pending = [];
+
+        function next() {
+            var fn = pending.shift();
+            if (fn) {
+                fn(next);
+            }
+        }
+        return function(fn) {
+            pending.push(fn);
+            if (pending.length == 1) next();
+        };
+    })();
+    var css = (function() {
+        var cssPrefixes = ["Webkit", "O", "Moz", "ms"],
+            cssProps = {};
+
+        function camelCase(string) {
+            return string
+                .replace(/^-ms-/, "ms-")
+                .replace(/-([\da-z])/gi, function(match, letter) {
+                    return letter.toUpperCase();
+                });
+        }
+
+        function getVendorProp(name) {
+            var style = document.body.style;
+            if (name in style) return name;
+            var i = cssPrefixes.length,
+                capName = name.charAt(0).toUpperCase() + name.slice(1),
+                vendorName;
+            while (i--) {
+                vendorName = cssPrefixes[i] + capName;
+                if (vendorName in style) return vendorName;
+            }
+            return name;
+        }
+
+        function getStyleProp(name) {
+            name = camelCase(name);
+            return cssProps[name] || (cssProps[name] = getVendorProp(name));
+        }
+
+        function applyCss(element, prop, value) {
+            prop = getStyleProp(prop);
+            element.style[prop] = value;
+        }
+        return function(element, properties) {
+            var args = arguments,
+                prop,
+                value;
+            if (args.length == 2) {
+                for (prop in properties) {
+                    value = properties[prop];
+                    if (value !== undefined && properties.hasOwnProperty(prop))
+                        applyCss(element, prop, value);
+                }
+            } else {
+                applyCss(element, args[1], args[2]);
+            }
+        };
+    })();
+
+    function hasClass(element, name) {
+        var list = typeof element == "string" ? element : classList(element);
+        return list.indexOf(" " + name + " ") >= 0;
+    }
+
+    function addClass(element, name) {
+        var oldList = classList(element),
+            newList = oldList + name;
+        if (hasClass(oldList, name)) return;
+        element.className = newList.substring(1);
+    }
+
+    function removeClass(element, name) {
+        var oldList = classList(element),
+            newList;
+        if (!hasClass(element, name)) return;
+        newList = oldList.replace(" " + name + " ", " ");
+        element.className = newList.substring(1, newList.length - 1);
+    }
+
+    function classList(element) {
+        return (" " + (element.className || "") + " ").replace(/\s+/gi, " ");
+    }
+
+    function removeElement(element) {
+        element && element.parentNode && element.parentNode.removeChild(element);
+    }
+    return NProgress;
+});
+//绑定进度条
+$(document)
+    .on("pjax:start", NProgress.start)
+    .on("pjax:end", NProgress.done)
+    .on("pjax:complete", MyYe);
+
+function MyYe() {
+    var newOption0 = document.getElementsByClassName("form-group");
+    var newOption = newOption0[0];
+    var select = document.createElement("label");
+    var t = document.createTextNode("忧郁小猫猫");
+    select.setAttribute("class", "radio-inline");
+    inputText = document.createElement("input");
+    inputText.setAttribute("type", "radio");
+    inputText.setAttribute("name", "bqb2");
+    select.appendChild(inputText);
+    select.appendChild(t);
+    newOption.insertBefore(select, newOption.childNodes[0]);
+    select.onclick = function() {
+        var emotlist = [
+            "<option></option>",
+            '<option value="<img src=https://i.loli.net/2019/10/27/lF9QtjMuP8dNXbS.png>">激动</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/27/TYyuIAPOUXJcpCD.png>">叶叶竖两个大拇指</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/27/dp3RFBP64rgHCTE.png>">无辜</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/JBXecHnSt9ioZfP.png>">抱住叶叶大哭</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/27/qTSQ4lYpUOtaGuC.png>">皮卡修</option>',
+            '<option value="<img src=https://s2.ax1x.com/2019/10/27/Kr0GIf.png>">恶龙咆哮</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/Zve39x5h1qlQfgR.gif>">叶叶打call</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/NTOCMmZF1eJsoj6.png>">叶叶笑</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/yXmt7lWqD1Ywi6S.png>">叶叶呵呵</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/gvjOKemIXtEdpNk.png>">叶叶深沉</option>',
+            '<option value="<img src=https://ftp.bmp.ovh/imgs/2019/10/e52d7c9fa62ced37.png>">OH...</option>',
+            '<option value="<img src=https://ftp.bmp.ovh/imgs/2019/10/26f79afe1c3b161f.png>">噗嗤</option>',
+            '<option value="<img src=https://ftp.bmp.ovh/imgs/2019/10/fd51e11daee367c5.png>">来</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/4QJt9hk8rzjlCLF.gif>">叶叶住烟盒</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/4sHvdSymTAa8ZpW.png>">我闭嘴</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/fPizYnd5AlHJgDC.png>">叶叶蹲</option>',
+            '<option value="<img src=https://ftp.bmp.ovh/imgs/2019/10/17a7604be8a7564d.png>">不可以！</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/VYCmGIwRcd5bHL8.jpg>">把叶叶好好藏包里</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/joV7kMRKcyEBJIQ.jpg>">包里的叶叶找不到了</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/65rYspZl2SuwUBv.jpg>">给你喷点叶修</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/01/6neP23umxziQKMs.gif>">叶叶骑在熊猫上</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/KYg6xoCTrEJVMip.gif>">叶叶吃面</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/01/MJ4bPOmsc8fh69l.png>">他就是我的神</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/01/aNgMZXrcm51dCfT.png>">落花掌</option>',
+            '<option value="<img src=https://i.loli.net/2019/11/01/feN3p4DBz7RT2x6.png>">并不简单</option>',
+            '<option value="<img src=https://i.loli.net/2019/10/26/sfSDeYJVNXwohCi.jpg>">捂脸</option>',
+            '<option value="<img src=https://ftp.bmp.ovh/imgs/2019/10/fdfea20f565d2e45.png>">鹦鹉鸡-怀疑</option>',
+            '<option value="<img src=https://ftp.bmp.ovh/imgs/2019/10/578796363eeafb1e.gif>">鹦鹉鸡-熬夜</option>',
+            '<option value="<a href=&quot;链接&quot; target=&quot;_blank&quot;>点我就看XXX</a>">超链接代码</option>',
+            '<option value="<font class=&quot;xiu&quot;>文字</font>">金色渐变字代码</option>',
+            '<option value="<font class=&quot;zheyingbu&quot;>文字</font>">遮影步字代码</option>',
+            '<option value="&lt;script>ye_call_board=&apos;文字或链接/图片代码&apos;&lt;/script>">给叶楼加公告</option>',
+            '<option value="&lt;script>ye_saying.push(&apos;请输入你要添加的对话&apos;);&lt;/script>">添加右下角对话</option>'
+        ];
+        $("#emot").empty();
+        for (i in emotlist) {
+            $("#emot").append(emotlist[i]);
+        }
+    };
+    var url = document.URL;
+    url = url.replace("#dibu", "");
+    url = url.replace("#top", "")
+    $("#yerefresh").attr("href", url);
+    shouYeM();
+}
+//鼠标点击代码
+(function() {
+    var coreSocialistValues = ["<img src=https://i.loli.net/2019/11/02/S2wv5cOd37xyuL1.png>", "🍃", "🍂", "🍁", "🍀", "🎄"];
+    var index = Math.floor(Math.random() * coreSocialistValues.length);
+    document.body.addEventListener("click", function(e) {
+        if (e.target.tagName == "A") {
+            return;
+        }
+        var x = e.pageX,
+            y = e.pageY,
+            span = document.createElement("span");
+        span.innerHTML = coreSocialistValues[index];
+        index = (index + 1) % coreSocialistValues.length;
+        span.style.cssText = [
+            "z-index: 9999999; position: absolute; font-weight: bold; color: #ff6651; top: ",
+            y - 20,
+            "px; left: ",
+            x,
+            "px;"
+        ].join("");
+        document.body.appendChild(span);
+        animate(span);
+    });
+
+    function animate(el) {
+        var i = 0,
+            top = parseInt(el.style.top),
+            id = setInterval(frame, 16.7);
+
+        function frame() {
+            if (i > 180) {
+                clearInterval(id);
+                el.parentNode.removeChild(el);
+            } else {
+                i += 2;
+                el.style.top = top - i + "px";
+                el.style.opacity = (180 - i) / 180;
+            }
+        }
+    }
+})();
+var all_ye_href_one = [
+    "http://bbs.jjwxc.net/showmsg.php?board=3&id=1927524",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&boardpagemsg=1&id=1736242",
+    "http://bbs.jjwxc.net/showmsg.php?board=3&id=1928543&page=0",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6&id=1754049",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&boardpagemsg=1&id=1731020",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D6%B1%BD%E2%BD%E2&id=1730911",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%C4%D0%D6%F7%BE%CD%D5%E2%C3%B4&id=1698536",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%C8%AB%C3%F7%D0%C7%C8%FC%D2%B6&id=1662184",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6%D0%DE&id=1729027",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%BB%EE%C6%C3%BF%C9%B0%AE%B4%F3%CC%EC%CA%B9&id=1658832",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6%D0%DE%B5%BD%B5%D7%CA%C7%CA%B2%C3%B4%C8%CB%C9%E8&id=1244137&page=0",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%C0%CF%D2%B6%B4%D3%CE%B4%B7%DF%C5%AD&id=1039098",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6%D0%DE&id=1665366",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6%D0%DE%C3%F7%C3%F7%BA%DC%B6%E0%C7%E9&id=1063950",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6%D0%DE%CE%AA%CA%B2%C3%B4%CA%C7top&id=1400180",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6%D0%DE%D5%E6%B5%C4%BA%C3%CB%D5%B0%A1&id=1366604",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%C4%E3%C3%C7%D2%B6%D0%DE%B2%BB%CA%C7%B4%F3%C9%F1&id=1317060",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%B3%FD%C1%CB%D4%AD%D6%F8%D6%B0%D2%B5&id=1271509",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6%D0%DE%B5%B1%B3%F5%C0%EB%BC%D2%B3%F6%D7%DF&id=1260139",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6%D0%DE&id=1717694",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%CD%E2%CC%B2%B7%C5%B5%C4%C4%C7%B8%F6&id=1366034&page=0",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%C3%E2%B7%D1%CE%E7%B2%CD%20%BD%D8%D6%B9&id=1365653",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D6%B1%A3%AC%CE%DE%C1%C4&id=1711563",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6%D6%D0%D0%C4&id=1612667",
+    "http://bbs.jjwxc.com/showmsg.php?board=3&keyword=%D2%B6%CF%E0%B9%D8cp%C2%A5&id=1654216",
+    "http://bbs.jjwxc.net/showmsg.php?board=3&boardpagemsg=1&id=1775246",
+    "http://bbs.jjwxc.net/showmsg.php?board=3&id=1779877",
+    "http://bbs.jjwxc.net/showmsg.php?board=3&boardpagemsg=1&id=1783660",
+    "http://bbs.jjwxc.net/showmsg.php?board=3&id=1788014",
+    "http://bbs.jjwxc.net/showmsg.php?board=3&id=1863804",
+    "http://bbs.jjwxc.net/showmsg.php?board=3&boardpagemsg=1&id=1908547",
+    "http://bbs.jjwxc.net/showmsg.php?board=3&boardpagemsg=1&id=1924260"
+];
+var all_ye_href_two = [
+    "https://shimo.im/docs/vYWhQw6XwKRHr3CT",
+    "https://github.com/mizhiyugan529/yelou"
+];
+var all_ye_href_three = [
+    "https://www.nmmnm.co/showmsg/forumid/5/id/7638705?page=1",
+    "https://www.nmmnm.co/showmsg/forumid/5/id/5751335?page=1",
+    "https://www.nmmnm.co/showmsg/forumid/5/id/7b2b5005?page=1",
+    "https://www.nmmnm.co/showmsg/forumid/5/id/3a664099?page=1",
+    "https://www.nmmnm.co/showmsg/forumid/5/id/5b5cc008032927?page=1",
+    "http://bbs.jjwxc.net/showmsg.php?board=3&id=1627917",
+    "http://xqwh.org/viewtopic.php?f=2&t=40638"
+];
+
+function YeRandomHref1() {
+    $("#ye_random_href1").attr(
+        "href",
+        all_ye_href_one[Math.floor(Math.random() * all_ye_href_one.length)]
+    );
+}
+
+function YeRandomHref2() {
+    $("#ye_random_href2").attr(
+        "href",
+        all_ye_href_two[Math.floor(Math.random() * all_ye_href_two.length)]
+    );
+}
+
+function YeRandomHref3() {
+    $("#ye_random_href3").attr(
+        "href",
+        all_ye_href_three[Math.floor(Math.random() * all_ye_href_three.length)]
+    );
+}
+//更换图标
+var linkObject = document.createElement("link");
+linkObject.rel = "shortcut icon";
+linkObject.href = "https://i.loli.net/2019/11/10/6UpPSFLOTtzHs89.png";
+document.getElementsByTagName("head")[0].appendChild(linkObject);
+//悬浮提示按钮
+$("#ye_random_href1").hover(function() {
+    showMessage("随机跳转", 3000)
+});
+var music_sayings = ["包子你不是想唱歌吗？唱吧", "不好意思，喝酒我就更不行了，如你所说，那就来一曲？", "不听听声音吗？效果更好哦！", "我选的这个配乐怎么样？你是学音乐的你看呢？", "我加了配乐，还能听……"];
+
+function shouYeM() {
+    $("#myhkplayer > div.switch-player").hover(function() {
+        showMessage(music_sayings, 3000)
+    });
+    $("#replybtn").hover(function() {
+        showMessage("回复", 3000)
+    });
+}
