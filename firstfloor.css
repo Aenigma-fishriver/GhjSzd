@@ -6,8 +6,16 @@
     background: transparent;
 }
 
+.alert {
+    color: #fca18b;
+}
+
 .bg-info {
-    background-color: transparent;
+    background-color: #fff0ec;
+}
+
+.text-success {
+    color: #fca18b;
 }
 
 .group_0 {
@@ -15,17 +23,17 @@
     background: url(https://i.loli.net/2019/10/28/Z3pH7DbLilhI1EF.png) no-repeat !important;
 }
 
+.authorinfo {
+    color: #fca18b;
+}
+
+hr {
+    background: #fca18b;
+}
+
 .title {
     color: #ffffff;
     background-color: #fca18b;
-}
-
-.bg-info {
-    background-color: transparent;
-}
-
-.replybody a {
-    color: #ffa500 !important;
 }
 
 a:hover {
@@ -36,145 +44,36 @@ center a:hover {
     color: #ff0000 !important;
 }
 
-center span {
-    color: #000000 !important;
-}
 
-.group_0 {
-    color: transparent !important;
-}
-
-.xiu a {
-    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #5a4d30), color-stop(0.15, #918157), color-stop(0.3, #cfa520), color-stop(0.45, #5a4d30), color-stop(0.6, #cfa520), color-stop(0.75, #b4a120), color-stop(0.9, #bfa66e), color-stop(1, #cfa520)) !important;
+.firstfloorlink {
+    background-image: linear-gradient(90deg, rgba(255,139,110,1) 0%, rgba(233,150,62,1) 50%, rgba(255,139,110,1) 100%) !important;
     color: transparent !important;
     -webkit-background-clip: text !important;
     -moz-background-clip: text !important;
     -ms-background-clip: text !important;
 }
 
-.xiu {
-    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #5a4d30), color-stop(0.15, #918157), color-stop(0.3, #cfa520), color-stop(0.45, #5a4d30), color-stop(0.6, #cfa520), color-stop(0.75, #b4a120), color-stop(0.9, #bfa66e), color-stop(1, #cfa520)) !important;
+.firstfloorlink a {
+    background-image: linear-gradient(90deg, rgba(233,150,62,1) 0%, rgba(255,139,110,1) 50%, rgba(233,150,62,1) 100%) !important;
     color: transparent !important;
     -webkit-background-clip: text !important;
     -moz-background-clip: text !important;
     -ms-background-clip: text !important;
-}
-
-.xiu a {
-    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #5a4d30), color-stop(0.15, #918157), color-stop(0.3, #cfa520), color-stop(0.45, #5a4d30), color-stop(0.6, #cfa520), color-stop(0.75, #b4a120), color-stop(0.9, #bfa66e), color-stop(1, #cfa520)) !important;
-    color: transparent !important;
-    -webkit-background-clip: text !important;
-    -moz-background-clip: text !important;
-    -ms-background-clip: text !important;
-}
-
-.ye {
-    background-image: linear-gradient( 148deg, rgba(0, 0, 0, 1) 0%, rgba(231, 76, 60, 1) 100%) !important;
-    color: transparent !important;
-    -webkit-background-clip: text !important;
-    -moz-background-clip: text !important;
-    -ms-background-clip: text !important;
-}
-
-.ye a {
-    background-image: linear-gradient( 148deg, rgba(0, 0, 0, 1) 0%, rgba(231, 76, 60, 1) 100%) !important;
-    color: transparent !important;
-    -webkit-background-clip: text !important;
-    -moz-background-clip: text !important;
-    -ms-background-clip: text !important;
-}
-
-
-/*进度条*/
-
-#nprogress {
-    pointer-events: none;
-}
-
-#nprogress .bar {
-    background: #29d;
-    position: fixed;
-    z-index: 1031;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-}
-
-#nprogress .peg {
-    display: block;
-    position: absolute;
-    right: 0;
-    width: 100px;
-    height: 100%;
-    box-shadow: 0 0 10px #29d, 0 0 5px #29d;
-    opacity: 1;
-    -webkit-transform: rotate(3deg) translate(0px, -4px);
-    -ms-transform: rotate(3deg) translate(0px, -4px);
-    transform: rotate(3deg) translate(0px, -4px);
-}
-
-#nprogress .spinner {
-    display: block;
-    position: fixed;
-    z-index: 1031;
-    top: 15px;
-    right: 15px;
-}
-
-#nprogress .spinner-icon {
-    width: 18px;
-    height: 18px;
-    box-sizing: border-box;
-    border: solid 2px transparent;
-    border-top-color: #29d;
-    border-left-color: #29d;
-    border-radius: 50%;
-    -webkit-animation: nprogress-spinner 400ms linear infinite;
-    animation: nprogress-spinner 400ms linear infinite;
-}
-
-.nprogress-custom-parent {
-    overflow: hidden;
-    position: relative;
-}
-
-.nprogress-custom-parent #nprogress .spinner,
-.nprogress-custom-parent #nprogress .bar {
-    position: absolute;
-}
-
-@-webkit-keyframes nprogress-spinner {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes nprogress-spinner {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 
 /*头像*/
 
 .image1 {
-    background: url(https://i.loli.net/2019/09/19/5WsBDCpfVi4JI7A.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/27/5f32OBLpqN6UdCF.gif) no-repeat !important;
 }
 
 .image2 {
-    background: url(https://i.loli.net/2019/09/19/bB7gRpHhStWJKPy.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/03/18/5c8f580b1002c.jpg) no-repeat !important;
 }
 
 .image3 {
-    background: url(https://i.loli.net/2019/09/19/h4rX6fdR3eqJicv.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/03/18/5c8f580b0df2a.jpg) no-repeat !important;
 }
 
 .image4 {
@@ -182,145 +81,145 @@ center span {
 }
 
 .image5 {
-    background: url(https://i.loli.net/2019/09/20/yemLc4pnD3GzOIl.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/03/18/5c8f580b0a828.jpg) no-repeat !important;
 }
 
 .image6 {
-    background: url(https://i.loli.net/2019/09/19/jF8RrW1Pwn9vhSL.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/03/18/5c8f580b06282.jpg) no-repeat !important;
 }
 
 .image7 {
-    background: url(https://i.loli.net/2019/09/19/plK3rxMQ5csCNSP.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/03/18/5c8f580b0438e.jpg) no-repeat !important;
 }
 
 .image8 {
-    background: url(https://i.loli.net/2019/09/19/yrMBPx9sEtScQ21.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/03/18/5c8f573f242f8.jpg) no-repeat !important;
 }
 
 .image9 {
-    background: url(https://i.loli.net/2019/09/19/r9mcRxg6QFIEs5u.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/03/18/5c8f567593d43.jpg) no-repeat !important;
 }
 
 .image10 {
-    background: url(https://i.loli.net/2019/09/19/3aJXu7oncfYMBhQ.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/03/18/5c8f567593df1.jpg) no-repeat !important;
 }
 
 .image11 {
-    background: url(https://i.loli.net/2019/09/20/hPlbdsHgtX51E43.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/D7CUoyf129pF8cx.jpg) no-repeat !important;
 }
 
 .image12 {
-    background: url(https://i.loli.net/2019/09/19/oIyXN2vuw6Rz4WB.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/A8xWbFrw3kvtie2.jpg) no-repeat !important;
 }
 
 .image13 {
-    background: url(https://i.loli.net/2019/09/19/ZaiLBsxwMfD2d6X.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/VzIORX5LFNZsESn.jpg) no-repeat !important;
 }
 
 .image14 {
-    background: url(https://i.loli.net/2019/09/20/nSwOMN32lTyaXVt.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/NhLHruAlcX4BaFo.jpg) no-repeat !important;
 }
 
 .image15 {
-    background: url(https://i.loli.net/2019/09/20/8mbr65lVCtSEcpA.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/jinFzaBokrJyQug.jpg) no-repeat !important;
 }
 
 .image16 {
-    background: url(https://i.loli.net/2019/09/20/OD5bqdGBpRUyFsr.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/03/18/5c8f573f27bf1.jpg) no-repeat !important;
 }
 
 .image17 {
-    background: url(https://i.loli.net/2019/09/20/KZvuTxJfphct3A4.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/QMugivq9CU3Hd52.jpg) no-repeat !important;
 }
 
 .image18 {
-    background: url(https://i.loli.net/2019/09/20/1LiezKrdcJvUqml.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/GdtMXxpvN5hBLac.jpg) no-repeat !important;
 }
 
 .image19 {
-    background: url(https://i.loli.net/2019/09/20/34G5xzbnKAlcumY.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/23/Mx1OphadGBSEKV9.gif) no-repeat !important;
 }
 
 .image20 {
-    background: url(https://i.loli.net/2019/09/25/YxTDFy3NlcKG7nC.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/25/JL1mTW5HAIPhRe7.gif) no-repeat !important;
 }
 
 .image21 {
-    background: url(https://i.loli.net/2019/09/20/SQR9Ayw3rLbVH7z.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/25/JL1mTW5HAIPhRe7.gif) no-repeat !important;
 }
 
 .image22 {
-    background: url(https://i.loli.net/2019/09/20/Tq2vRfBxJPpyLnl.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/DJTz3t4wdcargbL.png) no-repeat !important;
 }
 
 .image23 {
-    background: url(https://i.loli.net/2019/09/20/SovxcdiEtl2s1DK.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/DJTz3t4wdcargbL.png) no-repeat !important;
 }
 
 .image24 {
-    background: url(https://i.loli.net/2019/09/20/2o8GHzFtrvc3Cmw.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/DJTz3t4wdcargbL.png) no-repeat !important;
 }
 
 .image25 {
-    background: url(https://i.loli.net/2019/09/20/SQWt7L5Gf1zCkoR.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/DJTz3t4wdcargbL.png) no-repeat !important;
 }
 
 .image26 {
-    background: url(https://i.loli.net/2019/09/20/P4cdWluBtXoVAM5.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/DJTz3t4wdcargbL.png) no-repeat !important;
 }
 
 .image27 {
-    background: url(https://i.loli.net/2019/09/25/SsrblfmAyNYQDuP.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/DJTz3t4wdcargbL.png) no-repeat !important;
 }
 
 .image28 {
-    background: url(https://i.loli.net/2019/09/19/plK3rxMQ5csCNSP.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/DJTz3t4wdcargbL.png) no-repeat !important;
 }
 
 .image29 {
-    background: url(https://i.loli.net/2019/09/19/yrMBPx9sEtScQ21.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/24/VwaUOcrhoQN1DjH.gif) no-repeat !important;
 }
 
 .image30 {
-    background: url(https://i.loli.net/2019/09/19/ZaiLBsxwMfD2d6X.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/25/8Vp5waIKzHjDLY6.jpg) no-repeat !important;
 }
 
 .image31 {
-    background: url(https://i.loli.net/2019/09/20/nSwOMN32lTyaXVt.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/25/1Qpwvm6adsHRYUG.jpg) no-repeat !important;
 }
 
 .image32 {
-    background: url(https://i.loli.net/2019/09/20/8mbr65lVCtSEcpA.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/25/Aq3EntRV56psozK.jpg) no-repeat !important;
 }
 
 .image33 {
-    background: url(https://i.loli.net/2019/09/20/OD5bqdGBpRUyFsr.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/qGOHlxK7ZpFfVIy.png) no-repeat !important;
 }
 
 .image34 {
-    background: url(https://i.loli.net/2019/10/21/AsyKF28uIMHh3nJ.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/25/sCw7Amy5kIMXJlp.gif) no-repeat !important;
 }
 
 .image35 {
-    background: url(https://i.loli.net/2019/09/20/34G5xzbnKAlcumY.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/S6KLlhngXoeGHOb.png) no-repeat !important;
 }
 
 .image36 {
-    background: url(https://i.loli.net/2019/09/25/YxTDFy3NlcKG7nC.jpg) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/S6KLlhngXoeGHOb.png) no-repeat !important;
 }
 
 .image37 {
-    background: url(https://i.loli.net/2019/09/20/Tq2vRfBxJPpyLnl.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/25/nkYLi6b1oXqwuzR.jpg) no-repeat !important;
 }
 
 .image38 {
-    background: url(https://i.loli.net/2019/09/20/SovxcdiEtl2s1DK.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/FX71OetYs2BE9JG.png) no-repeat !important;
 }
 
 .image39 {
-    background: url(https://i.loli.net/2019/10/21/PDCtVobEe1YFq8x.gif) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/21/FX71OetYs2BE9JG.png) no-repeat !important;
 }
 
 .image40 {
-    background: url(https://i.loli.net/2019/10/21/lgbjeI1GEzF6xhP.png) no-repeat !important;
+    background: url(https://i.loli.net/2019/10/25/JL1mTW5HAIPhRe7.gif) no-repeat !important;
 }
