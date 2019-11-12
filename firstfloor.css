@@ -36,6 +36,10 @@ hr {
     background-color: #fca18b;
 }
 
+a {
+    color: #f77759;
+}
+
 a:hover {
     color: #ff0000 !important;
 }
