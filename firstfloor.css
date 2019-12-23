@@ -10,6 +10,11 @@
     color: #fca18b;
 }
 
+.alert-danger {
+    background: transparent;
+    border-color: #fca18b;
+}
+
 .bg-info {
     background-color: #fff0ec;
 }
