@@ -61,7 +61,7 @@ $(document).ready(function () {
         $("#GhjSzd").append(biaoqing);
       }
       $("#GhjSzd").append(
-        '<br><font id="clj">点就看代码</font> · <font id="fcjbz" class="firstfloorlink">粉橙渐变字代码</font> · <font id="hjjbz">黑金渐变字代码</font> · <font id="jgg">给楼内加公告</font> · <font id="wbk">文本框代码</font> · <font id="aaa">啊×n</font>'
+        '<br><font id="clj">点就看代码</font> · <font id="fcjbz" class="firstfloorlink">粉橙渐变字代码</font> · <font id="hjjbz" class="heijin">黑金渐变字代码</font> · <font id="jgg">给楼内加公告</font> · <font id="wbk">文本框代码</font> · <font id="aaa">啊×n</font>'
       );
       $("#clj").on("click", function() {
         $("#wenbenkuang").val(
