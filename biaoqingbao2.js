@@ -1,51 +1,56 @@
 var ye_call_board = "";
-$("body").prepend("<style>.xiu {background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #5a4d30), color-stop(0.15, #918157), color-stop(0.3, #cfa520), color-stop(0.45, #5a4d30), color-stop(0.6, #cfa520), color-stop(0.75, #b4a120), color-stop(0.9, #bfa66e), color-stop(1, #cfa520)) !important;color: transparent !important;-webkit-background-clip: text !important;-moz-background-clip: text !important;-ms-background-clip: text !important;}.xiu a {background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #5a4d30), color-stop(0.15, #918157), color-stop(0.3, #cfa520), color-stop(0.45, #5a4d30), color-stop(0.6, #cfa520), color-stop(0.75, #b4a120), color-stop(0.9, #bfa66e), color-stop(1, #cfa520)) !important;color: transparent !important;-webkit-background-clip: text !important;-moz-background-clip: text !important;-ms-background-clip: text !important;}.zheyingbu {color: transparent;}.zheyingbu:hover {color: #000;}</style>")
+$("body").prepend("<style>.firstfloorlink {background-image: linear-gradient(90deg, rgba(255,139,110,1) 0%, rgba(233,150,62,1) 50%, rgba(255,139,110,1) 100%) !important;color: transparent !important;-webkit-background-clip: text !important;-moz-background-clip: text !important;-ms-background-clip: text !important;}.firstfloorlink a {background-image: linear-gradient(90deg, rgba(233,150,62,1) 0%, rgba(255,139,110,1) 50%, rgba(233,150,62,1) 100%) !important;color: transparent !important;-webkit-background-clip: text !important;-moz-background-clip: text !important;-ms-background-clip: text !important;}.heijin {background-image: linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(238,97,35,1) 50%, rgba(0,0,0,1) 95%) !important;color: transparent !important;-webkit-background-clip: text !important;-moz-background-clip: text !important;-ms-background-clip: text !important;}</style>")
 $(document).ready(function () {
-	$("div.text-success").before("<div align='center' id='YeCallBoard'></div>");
-    $("#YeCallBoard").html(ye_call_board);
-    $("#acn").before('<div class="am-tab-panel am-fade" id="yelou"></div>');
-    $(".am-tabs-nav.am-nav.am-nav-tabs").prepend("<li id='yeloubqb' class><a href='#yelou'>蹇ч儊灏忕尗鐚�</li>");
-    $("#yeclj").on("click", function () {
-        $("#wenbenkuang").val($("#wenbenkuang").val() + '<a href="閾炬帴" target="_blank">鐐规垜灏辩湅XXX</a>');
+	$("div.text-success").before("<div align='center' id='GhjCallBoard'></div>");
+    $("#GhjCallBoard").html(Ghj_call_board);
+    $("#acn").before('<div class="am-tab-panel am-fade" id="GhjSzd"></div>');
+    $(".am-tabs-nav.am-nav.am-nav-tabs").prepend("<li id='ghjbqb' class><a href='#GhjSzd'>桂花酒专属</li>");
+    $("#clj").on("click", function () {
+        $("#wenbenkuang").val($("#wenbenkuang").val() + '<a href="链接" target="_blank">点我就看</a>');
     });
-    $("#yejsjbz").on("click", function () {
-        $("#wenbenkuang").val($("#wenbenkuang").val() + '<font class="xiu">鏂囧瓧</font>');
+    $("#fcjbz").on("click", function () {
+        $("#wenbenkuang").val($("#wenbenkuang").val() + '<font class="firstfloorlink">文字</font>');
     });
-    $("#yezyb").on("click", function () {
-        $("#wenbenkuang").val($("#wenbenkuang").val() + '<font class="zheyingbu">鏂囧瓧</font>');
+    $("#hjjbz").on("click", function () {
+        $("#wenbenkuang").val($("#wenbenkuang").val() + '<font class="heijin">文字</font>');
     });
-    $("#yeloubqb").on("click", function() {
+    $("#wbk").on("click", function () {
+        $("#wenbenkuang").val($("#wenbenkuang").val() + '<textarea class="form-control">文字或代码</textarea>');
+    });
+    $("#aaa").on("click", function () {
+        $("#wenbenkuang").val($("#wenbenkuang").val() + '啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊');
+    });
+    $("#ghjbqb").on("click", function() {
       var imglist = [
-        "https://i.loli.net/2019/10/27/lF9QtjMuP8dNXbS.png",
-        "https://i.loli.net/2019/10/27/TYyuIAPOUXJcpCD.png",
-        "https://i.loli.net/2019/10/27/dp3RFBP64rgHCTE.png",
-        "https://i.loli.net/2019/10/26/JBXecHnSt9ioZfP.png",
-        "https://i.loli.net/2019/10/27/qTSQ4lYpUOtaGuC.png",
-        "https://s2.ax1x.com/2019/10/27/Kr0GIf.png",
-        "https://i.loli.net/2019/10/26/Zve39x5h1qlQfgR.gif",
-        "https://i.loli.net/2019/10/26/NTOCMmZF1eJsoj6.png",
-        "https://i.loli.net/2019/10/26/yXmt7lWqD1Ywi6S.png",
-        "https://i.loli.net/2019/10/26/gvjOKemIXtEdpNk.png",
-        "https://ftp.bmp.ovh/imgs/2019/10/e52d7c9fa62ced37.png",
-        "https://ftp.bmp.ovh/imgs/2019/10/26f79afe1c3b161f.png",
-        "https://ftp.bmp.ovh/imgs/2019/10/fd51e11daee367c5.png",
-        "https://i.loli.net/2019/10/26/4QJt9hk8rzjlCLF.gif",
-        "https://i.loli.net/2019/10/26/4sHvdSymTAa8ZpW.png",
-        "https://i.loli.net/2019/10/26/fPizYnd5AlHJgDC.png",
-        "https://ftp.bmp.ovh/imgs/2019/10/17a7604be8a7564d.png",
-        "https://i.loli.net/2019/10/26/VYCmGIwRcd5bHL8.jpg",
-        "https://i.loli.net/2019/10/26/joV7kMRKcyEBJIQ.jpg",
-        "https://i.loli.net/2019/10/26/65rYspZl2SuwUBv.jpg",
-        "https://i.loli.net/2019/11/01/6neP23umxziQKMs.gif",
-        "https://i.loli.net/2019/10/26/KYg6xoCTrEJVMip.gif",
-        "https://i.loli.net/2019/11/01/MJ4bPOmsc8fh69l.png",
-        "https://i.loli.net/2019/11/01/aNgMZXrcm51dCfT.png",
-        "https://i.loli.net/2019/11/01/feN3p4DBz7RT2x6.png",
-        "https://i.loli.net/2019/10/26/sfSDeYJVNXwohCi.jpg",
-        "https://ftp.bmp.ovh/imgs/2019/10/fdfea20f565d2e45.png",
-        "https://ftp.bmp.ovh/imgs/2019/10/578796363eeafb1e.gif"
+        "https://i.loli.net/2019/10/28/CV2Y7mgfPihEHSw.jpg",
+        "https://i.loli.net/2019/10/28/c3fUIkh9KZ5LyDi.jpg",
+        "https://i.loli.net/2019/10/28/rLuiUsZwS43DVhH.jpg",
+        "https://i.loli.net/2019/10/29/pZUHPfyiFGvhlNA.jpg",
+        "https://i.loli.net/2019/10/29/XAaZBoJHr8MKl2d.jpg",
+        "https://i.loli.net/2019/10/29/V8vtdxUfuOJqb47.jpg",
+        "https://i.loli.net/2019/10/29/Rwhqg42fHXl8osz.jpg",
+        "https://i.loli.net/2019/10/29/dOo9nLufCjB1qUP.jpg",
+        "https://i.loli.net/2019/10/29/Lmc8N3QTtiOJlUb.gif",
+        "https://i.loli.net/2019/10/29/On3hi6oeY9fFqN2.gif",
+        "https://i.loli.net/2019/11/06/iv2fjc6G91PY7xh.gif",
+        "https://i.loli.net/2019/11/04/pvAJ1ug7jw9CNRt.gif",
+        "https://i.loli.net/2019/11/08/UYNJfIkeGA1qd4T.gif",
+        "https://i.loli.net/2019/10/28/cuJ7tI13rpUy6Qg.jpg",
+        "https://i.loli.net/2019/10/28/qX7bweSf2jaYQKH.jpg",
+        "https://i.loli.net/2019/10/29/lMb6dN5pa8A9gzk.gif",
+        "https://i.loli.net/2019/10/29/iDLA6fjyP79OZMo.gif",
+        "https://i.loli.net/2019/10/29/dkNMv4XQByUsqpR.gif",
+        "https://i.loli.net/2019/10/29/5BcKV6h7rdCTZe3.gif",
+        "https://i.loli.net/2019/10/29/LDh3M9eYKvxXzVu.gif",
+        "https://i.loli.net/2019/10/29/Pm4LjS32Dl7vgc8.gif",
+        "https://i.loli.net/2019/11/10/dD7mtTkyfCKIbw6.gif",
+        "https://i.loli.net/2019/11/08/VW2nmP1sCN86DEp.gif",
+        "https://i.loli.net/2019/11/06/9duQe4lKwaqn2Jc.gif",
+        "https://i.loli.net/2019/10/29/NtfHk71Lp4DUXcZ.jpg",
+        "https://i.loli.net/2019/10/29/wZ8MhdYHLkatIuS.jpg",
+        "https://i.loli.net/2019/11/06/Zyz5NPYfW6Fibja.gif"
       ];
-      $("#yelou").empty();
+      $("#GhjSzd").empty();
       for (var b = 0; b < imglist.length; b++) {
         var biaoqing =
           "<img src='" +
@@ -53,43 +58,35 @@ $(document).ready(function () {
           "' class='emot-class' Onclick='addemot(\"" +
           imglist[b] +
           "\")'>";
-        $("#yelou").append(biaoqing);
+        $("#GhjSzd").append(biaoqing);
       }
-      $("#yelou").append(
-        '<br><font id="yeclj">瓒呴摼鎺ヤ唬鐮�</font> 聽<font id="yejsjbz" class="xiu">閲戣壊娓愬彉瀛椾唬鐮�</font> 聽<font id="yezyb">閬奖姝ヤ唬鐮�</font> 聽<font id="yejgg">缁欏彾妤煎姞鍏憡</font> 聽<font id="yebwz"><b>鍔犵矖</b></font>聽<font id="yehwz" color=red><b>鍔犵孩</b></font>'
+      $("#GhjSzd").append(
+        '<br><font id="clj">点就看代码</font> · <font id="fcjbz" class="firstfloorlink">粉橙渐变字代码</font> · <font id="hjjbz">黑金渐变字代码</font> · <font id="jgg">给楼内加公告</font>'
       );
-      $("#yeclj").on("click", function() {
+      $("#clj").on("click", function() {
         $("#wenbenkuang").val(
           $("#wenbenkuang").val() +
-            '<a href="閾炬帴" target="_blank">鐐规垜灏辩湅XXX</a>'
+            '<a href="超链接" target="_blank">点我就看</a>'
         );
         $(".am-tabs-bd").hide();
       });
-      $("#yejsjbz").on("click", function() {
+      $("#fcjbz").on("click", function() {
         $("#wenbenkuang").val(
-          $("#wenbenkuang").val() + '<font class="xiu">鏂囧瓧</font>'
+          $("#wenbenkuang").val() + '<font class="firstfloorlink">文字</font>'
         );
         $(".am-tabs-bd").hide();
       });
-      $("#yezyb").on("click", function() {
+      $("#hjjbz").on("click", function() {
         $("#wenbenkuang").val(
-          $("#wenbenkuang").val() + '<font class="zheyingbu">鏂囧瓧</font>'
+          $("#wenbenkuang").val() + '<font class="heijin">文字</font>'
         );
         $(".am-tabs-bd").hide();
       });
-      $("#yejgg").on("click", function() {
+      $("#jgg").on("click", function() {
         $("#wenbenkuang").val(
           $("#wenbenkuang").val() +
-            '<scri'+'pt>ye_call_board="鏂囧瓧鎴栭摼鎺�/鍥剧墖浠ｇ爜"</sc'+'ript>'
+            '<scri'+'pt>Ghj_call_board="文字或图片代码"</sc'+'ript>'
         );
-        $(".am-tabs-bd").hide();
-      });
-      $("#yebwz").on("click", function() {
-        $("#wenbenkuang").val($("#wenbenkuang").val() +'<b>鏂囧瓧</b>');
-        $(".am-tabs-bd").hide();
-      });
-      $("#yehwz").on("click", function() {
-        $("#wenbenkuang").val($("#wenbenkuang").val() +'<font color=red><b>鏂囧瓧</b></font>');
         $(".am-tabs-bd").hide();
       });
       $(".am-tabs-bd").show();
