@@ -61,7 +61,7 @@ $(document).ready(function () {
         $("#GhjSzd").append(biaoqing);
       }
       $("#GhjSzd").append(
-        '<br><font id="clj">点就看代码</font> · <font id="fcjbz" class="firstfloorlink">粉橙渐变字代码</font> · <font id="hjjbz">黑金渐变字代码</font> · <font id="jgg">给楼内加公告</font>'
+        '<br><font id="clj">点就看代码</font> · <font id="fcjbz" class="firstfloorlink">粉橙渐变字代码</font> · <font id="hjjbz">黑金渐变字代码</font> · <font id="jgg">给楼内加公告</font> · <font id="wbk">文本框代码</font> · <font id="aaa">啊×n</font>'
       );
       $("#clj").on("click", function() {
         $("#wenbenkuang").val(
@@ -86,6 +86,20 @@ $(document).ready(function () {
         $("#wenbenkuang").val(
           $("#wenbenkuang").val() +
             '<scri'+'pt>Ghj_call_board="文字或图片代码"</sc'+'ript>'
+        );
+        $(".am-tabs-bd").hide();
+      });
+      $("#wbk").on("click", function() {
+        $("#wenbenkuang").val(
+          $("#wenbenkuang").val() +
+            '<textarea class="form-control">文字或代码</textarea>'
+        );
+        $(".am-tabs-bd").hide();
+      });
+      $("#aaa").on("click", function() {
+        $("#wenbenkuang").val(
+          $("#wenbenkuang").val() +
+            '啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊'
         );
         $(".am-tabs-bd").hide();
       });
