@@ -6,66 +6,65 @@ var movetimer = null;
 
 function changeshimeji(a,rnum="0") {
   if (a == "1") {
-    //鍋氫釜闅忔満鏁扮帺
     if (rnum == 1) {
       $('#shimeji').css({
-        "background-image": "url(https://www.yeallye.com/shimeji/img/shime2.png)"
+        "background-image": "url(https://www.yeallye.com/shimeji/img/shime2.png)" //叼烟走1
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime3.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime3.png)" //叼烟走2
         });
       }, 300);
     } else {
       $('#shimeji').css({
-        "background-image": "url(https://www.yeallye.com/shimeji/img/shime20.png)"
+        "background-image": "url(https://www.yeallye.com/shimeji/img/shime20.png)" //蜷腿趴1
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime21.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime21.png)" //蜷腿趴2
         });
       }, 300);
     }
   } else if (a == "2") {
     $('#shimeji').css({
-      "background-image": "url(https://www.yeallye.com/shimeji/img/shime12.png)"
+      "background-image": "url(https://www.yeallye.com/shimeji/img/shime12.png)" //甩手跑1
     });
     dhtimer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://www.yeallye.com/shimeji/img/shime13.png)"
+        "background-image": "url(https://www.yeallye.com/shimeji/img/shime13.png)" //甩手跑2
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime14.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime14.png)" //甩手跑3
         });
       }, 300);
     }, 300);
   } else if (a == "3") {
     $('#shimeji').css({
-      "background-image": "url(https://www.yeallye.com/shimeji/img/shime23.png)"
+      "background-image": "url(https://www.yeallye.com/shimeji/img/shime23.png)" //向上抱1
     });
     dhtimer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://www.yeallye.com/shimeji/img/shime24.png)"
+        "background-image": "url(https://www.yeallye.com/shimeji/img/shime24.png)" //向上抱2
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime25.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime25.png)" //向上抱3
         });
       }, 300);
     }, 300);
   } else if (a == "4") {
     //濂藉儚鏄惉浠€涔堜笢瑗�
     $('#shimeji').css({
-      "background-image": "url(https://www.yeallye.com/shimeji/img/shime39.png)"
+      "background-image": "url(https://www.yeallye.com/shimeji/img/shime39.png)" //乖乖坐1
     });
     dhtimer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://www.yeallye.com/shimeji/img/shime40.png)"
+        "background-image": "url(https://www.yeallye.com/shimeji/img/shime40.png)" //乖乖坐2
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime41.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime41.png)" //乖乖坐3
         });
       }, 300);
     }, 300);
@@ -73,15 +72,15 @@ function changeshimeji(a,rnum="0") {
     //鎯冲康鐢佃剳锛岄渶瑕乮nterview璋冨埌3000
     dhtimer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://www.yeallye.com/shimeji/img/shime27.png)"
+        "background-image": "url(https://www.yeallye.com/shimeji/img/shime27.png)" //盘腿坐1
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime28.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime28.png)" //盘腿坐2
         });
         dhtimer = setTimeout(function() {
           $('#shimeji').css({
-            "background-image": "url(https://www.yeallye.com/shimeji/img/shime29.png)"
+            "background-image": "url(https://www.yeallye.com/shimeji/img/shime29.png)" //盘腿坐3
           });
         }, 300);
       }, 600);
@@ -90,11 +89,11 @@ function changeshimeji(a,rnum="0") {
     //鑸炶箞
     dhtimer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://www.yeallye.com/shimeji/img/shime5.png)"
+        "background-image": "url(https://www.yeallye.com/shimeji/img/shime5.png)" //站立左扭
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime6.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime6.png)" //站立右扭
         });
       }, 300);
     }, 200);
@@ -125,7 +124,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
         });
         movetimer = setTimeout("smjmove()", 5000)
       }
@@ -136,9 +135,8 @@ function smjmove() {
     var faWidth = $('#shimeji').parent().width() - 64;
     var yeY = $('#shimeji').position().top;
     var yeX = $('#shimeji').position().left;
-    var rnum = Math.round(Math.random()); //闅忔満鏁�
+    var rnum = Math.round(Math.random());
 
-    //鍦ㄥ湴闈㈠垯鍚戝乏璧版垨鑰呭悜涓婅蛋鎴栬€呮渶鍚庡潗鍦ㄥ湴涓�
     if (faHeigt - yeY <= 70 && yeX >= 200) {
       //鍚戝乏璧�
       changeshimeji(1,rnum)
@@ -149,7 +147,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -164,7 +162,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -178,12 +176,11 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime26.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime26.png)" //盘腿坐
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
     } else if (faHeigt - yeY >= 70 && yeX > 0 && yeY > 0) {
-      //鏈夐珮搴︿笖涓嶅湪搴曢儴/椤堕儴锛屽垯璧板埌鏈€宸�
       var move_x = yeX;
       changeshimeji(1,rnum)
       dh = setInterval("changeshimeji(1,"+rnum+")", 600);
@@ -193,13 +190,11 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime26.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime26.png)" //盘腿坐
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
     } else if (faHeigt - yeY >= 70 && yeX == 0 && yeY > 0 && rnum == 0) {
-      //宸茬粡璧板埌鏈€宸︼紝涓斾笉鍦ㄩ《閮ㄦ垨鑰呭簳閮紝闅忔満鏁板線涓婃垨鑰呭線涓�
-      //鍚戜笂璧�
       changeshimeji(2)
       var move_x = yeX;
       dh = setInterval("changeshimeji(2)", 900, "linear");
@@ -210,7 +205,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -227,7 +222,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -244,7 +239,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#shimeji').css({
-            "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+            "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -259,7 +254,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#shimeji').css({
-            "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+            "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -279,7 +274,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#shimeji').css({
-            "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+            "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -292,7 +287,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#shimeji').css({
-            "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+            "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -307,7 +302,7 @@ function smjmove() {
 //闄嶈惤
 function jiangluo() {
   $('#shimeji').css({
-    "background-image": "url(https://www.yeallye.com/shimeji/img/shime4.png)"
+    "background-image": "url(https://www.yeallye.com/shimeji/img/shime4.png)" //掉下来
   });
   var nowY = $('#shimeji').position().top;
   var faWidth = $('#shimeji').parent().height() - 64;
@@ -316,15 +311,15 @@ function jiangluo() {
     top: "+=" + yyy
   }, yyy * 20, function() {
     $('#shimeji').css({
-      "background-image": "url(https://www.yeallye.com/shimeji/img/shime18.png)"
+      "background-image": "url(https://www.yeallye.com/shimeji/img/shime18.png)" //摔到地上
     });
     timer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://www.yeallye.com/shimeji/img/shime19.png)"
+        "background-image": "url(https://www.yeallye.com/shimeji/img/shime19.png)" //摔到地上爬起来一半
       });
       timer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
         });
         movetimer = setTimeout("smjmove()", 5000)
       }, 1000)
@@ -454,12 +449,12 @@ $.fn.extend({
       var rnum = Math.round(Math.random());
       if(rnum==0){
       $this.css({
-        "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+        "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
       });
       mDown = false;
       jiangluo();}else{
         $this.css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
         });
         mDown = false;
         movetimer = setTimeout("smjmove()", 5000)
@@ -469,12 +464,12 @@ $.fn.extend({
       var rnum = Math.round(Math.random());
       if(rnum==0){
       $this.css({
-        "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+        "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
       });
       mDown = false;
       jiangluo();}else{
         $this.css({
-          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)"
+          "background-image": "url(https://www.yeallye.com/shimeji/img/shime1.png)" //分腿站立笑
         });
         mDown = false;
         movetimer = setTimeout("smjmove()", 5000)
@@ -538,11 +533,11 @@ $.fn.extend({
           });
           if (selX > 0) {
             $this.css({
-              "background-image": "url(https://www.yeallye.com/shimeji/img/shime9.png)"
+              "background-image": "url(https://www.yeallye.com/shimeji/img/shime9.png)" //空中向右拉
             });
           } else {
             $this.css({
-              "background-image": "url(https://www.yeallye.com/shimeji/img/shime10.png)"
+              "background-image": "url(https://www.yeallye.com/shimeji/img/shime10.png)" //空中向左拉
             });
           }
         } else {
@@ -639,11 +634,11 @@ $.fn.extend({
           });
           if (selX > 0) {
             $this.css({
-              "background-image": "url(https://www.yeallye.com/shimeji/img/shime9.png)"
+              "background-image": "url(https://www.yeallye.com/shimeji/img/shime9.png)" //空中向右拉
             });
           } else {
             $this.css({
-              "background-image": "url(https://www.yeallye.com/shimeji/img/shime10.png)"
+              "background-image": "url(https://www.yeallye.com/shimeji/img/shime10.png)" //空中向左拉
             });
           }
         } else {
