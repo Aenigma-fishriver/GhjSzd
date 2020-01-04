@@ -1,4 +1,4 @@
-var ye_call_board = "";
+var Ghj_call_board = "";
 $("body").prepend("<style>.firstfloorlink {background-image: linear-gradient(90deg, rgba(255,139,110,1) 0%, rgba(233,150,62,1) 50%, rgba(255,139,110,1) 100%) !important;color: transparent !important;-webkit-background-clip: text !important;-moz-background-clip: text !important;-ms-background-clip: text !important;}.firstfloorlink a {background-image: linear-gradient(90deg, rgba(233,150,62,1) 0%, rgba(255,139,110,1) 50%, rgba(233,150,62,1) 100%) !important;color: transparent !important;-webkit-background-clip: text !important;-moz-background-clip: text !important;-ms-background-clip: text !important;}.heijin {background-image: linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(238,97,35,1) 50%, rgba(0,0,0,1) 95%) !important;color: transparent !important;-webkit-background-clip: text !important;-moz-background-clip: text !important;-ms-background-clip: text !important;}</style>")
 $(document).ready(function () {
 	$("div.text-success").before("<div align='center' id='GhjCallBoard'></div>");
