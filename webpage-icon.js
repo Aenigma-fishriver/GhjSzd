@@ -6,7 +6,7 @@ document.getElementsByTagName("head")[0].appendChild(linkObject);
 
 //鼠标点击效果
 (function () {
-    var coreSocialistValues = ["<img src=https://i.loli.net/2020/01/06/5tkNvTUAdcD9wSM.png>", "💙", "💚", "💛", "🧡", "❤️"];
+    var coreSocialistValues = ["🌸", "🐰", "💚", "💛", "🧡", "❤️"];
     var index = Math.floor(Math.random() * coreSocialistValues.length);
     document.body.addEventListener("click", function (e) {
         if (e.target.tagName == "A") {
