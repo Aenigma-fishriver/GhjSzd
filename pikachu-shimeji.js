@@ -1,4 +1,4 @@
-$("body").prepend("<div style='top:0px;left:0px;position: fixed;width:100%;height:100%;-webkit-pointer-events: none;-moz-pointer-events: none;-ms-pointer-events: none;-o-pointer-events: none;pointer-events: none;'><div id='shimeji' draggable='true' style='pointer-events:auto;position: absolute;cursor:move ;top:100px;left:90px;width:64px;height:64px;background-image:url(https://www.yeallye.com/shimeji/img/shime1.png);background-size:100%;z-index:999999999999;'></div></div>");
+$("body").prepend("<div style='top:0px;left:0px;position: fixed;width:100%;height:100%;-webkit-pointer-events: none;-moz-pointer-events: none;-ms-pointer-events: none;-o-pointer-events: none;pointer-events: none;'><div id='shimeji' draggable='true' style='pointer-events:auto;position: absolute;cursor:move ;top:100px;left:90px;width:64px;height:64px;background-image:url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png);background-size:100%;z-index:999999999999;'></div></div>");
 var dh = null;
 var dhtimer = null;
 var timer = null;
@@ -8,77 +8,77 @@ function changeshimeji(a,rnum="0") {
   if (a == "1") {
     if (rnum == 1) {
       $('#shimeji').css({
-        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime2.png)" //叼烟走1
+        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime2.png)"
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime3.png)" //叼烟走2
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime3.png)"
         });
       }, 300);
     } else {
       $('#shimeji').css({
-        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime20.png)" //蜷腿趴1
+        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime20.png)"
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime21.png)" //蜷腿趴2
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime21.png)"
         });
       }, 300);
     }
   } else if (a == "2") {
     $('#shimeji').css({
-      "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime12.png)" //甩手跑1
+      "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime12.png)"
     });
     dhtimer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime13.png)" //甩手跑2
+        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime13.png)"
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime14.png)" //甩手跑3
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime14.png)"
         });
       }, 300);
     }, 300);
   } else if (a == "3") {
     $('#shimeji').css({
-      "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime23.png)" //向上抱1
+      "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime23.png)"
     });
     dhtimer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime24.png)" //向上抱2
+        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime24.png)"
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime25.png)" //向上抱3
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime25.png)"
         });
       }, 300);
     }, 300);
   } else if (a == "4") {
     $('#shimeji').css({
-      "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime39.png)" //乖乖坐1
+      "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime39.png)"
     });
     dhtimer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime40.png)" //乖乖坐2
+        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime40.png)"
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime41.png)" //乖乖坐3
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime41.png)"
         });
       }, 300);
     }, 300);
   } else if (a == "5") {
     dhtimer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime27.png)" //盘腿坐1
+        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime27.png)"
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime28.png)" //盘腿坐2
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime28.png)"
         });
         dhtimer = setTimeout(function() {
           $('#shimeji').css({
-            "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime29.png)" //盘腿坐3
+            "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime29.png)"
           });
         }, 300);
       }, 600);
@@ -86,11 +86,11 @@ function changeshimeji(a,rnum="0") {
   } else if (a == "6") {
     dhtimer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime5.png)" //站立左扭
+        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime5.png)"
       });
       dhtimer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime6.png)" //站立右扭
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime6.png)"
         });
       }, 300);
     }, 200);
@@ -120,7 +120,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
         });
         movetimer = setTimeout("smjmove()", 5000)
       }
@@ -142,7 +142,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -156,7 +156,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -170,7 +170,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime26.png)" //盘腿坐
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime26.png)"
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -184,7 +184,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime26.png)" //盘腿坐
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime26.png)"
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -199,7 +199,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -214,7 +214,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -229,7 +229,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#shimeji').css({
-            "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+            "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -243,7 +243,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#shimeji').css({
-            "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+            "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -259,7 +259,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#shimeji').css({
-            "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+            "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -271,7 +271,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#shimeji').css({
-            "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+            "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -286,7 +286,7 @@ function smjmove() {
 //闄嶈惤
 function jiangluo() {
   $('#shimeji').css({
-    "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime4.png)" //掉下来
+    "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime4.png)"
   });
   var nowY = $('#shimeji').position().top;
   var faWidth = $('#shimeji').parent().height() - 64;
@@ -295,15 +295,15 @@ function jiangluo() {
     top: "+=" + yyy
   }, yyy * 20, function() {
     $('#shimeji').css({
-      "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime18.png)" //摔到地上
+      "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime18.png)"
     });
     timer = setTimeout(function() {
       $('#shimeji').css({
-        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime19.png)" //摔到地上爬起来一半
+        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime19.png)"
       });
       timer = setTimeout(function() {
         $('#shimeji').css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
         });
         movetimer = setTimeout("smjmove()", 5000)
       }, 1000)
@@ -433,12 +433,12 @@ $.fn.extend({
       var rnum = Math.round(Math.random());
       if(rnum==0){
       $this.css({
-        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
       });
       mDown = false;
       jiangluo();}else{
         $this.css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
         });
         mDown = false;
         movetimer = setTimeout("smjmove()", 5000)
@@ -448,12 +448,12 @@ $.fn.extend({
       var rnum = Math.round(Math.random());
       if(rnum==0){
       $this.css({
-        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+        "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
       });
       mDown = false;
       jiangluo();}else{
         $this.css({
-          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)" //分腿站立笑
+          "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime1.png)"
         });
         mDown = false;
         movetimer = setTimeout("smjmove()", 5000)
@@ -517,11 +517,11 @@ $.fn.extend({
           });
           if (selX > 0) {
             $this.css({
-              "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime9.png)" //空中向右拉
+              "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime9.png)"
             });
           } else {
             $this.css({
-              "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime10.png)" //空中向左拉
+              "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime10.png)"
             });
           }
         } else {
@@ -618,11 +618,11 @@ $.fn.extend({
           });
           if (selX > 0) {
             $this.css({
-              "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime9.png)" //空中向右拉
+              "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime9.png)"
             });
           } else {
             $this.css({
-              "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime10.png)" //空中向左拉
+              "background-image": "url(https://raw.githubusercontent.com/Aenigma-fishriver/GhjSzd/master/image/shime10.png)"
             });
           }
         } else {
