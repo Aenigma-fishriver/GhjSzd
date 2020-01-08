@@ -29,10 +29,10 @@ smjq(document).ready(function(){
     var docMouseMoveEvent = document.onmousemove;
     var docMouseUpEvent = document.onmouseup;
 
-    smjq("body").append('<div id="smchuncai" onfocus="this.blur();" style="color:#626262;z-index:99999;"><div id="chuncaiface"></div><div id="dialog_chat"><div id="chat_top"></div><div id="dialog_chat_contents"><div id="dialog_chat_loading"></div><div id="tempsaying"></div><div id="showchuncaimenu"><ul class="wcc_mlist" id="shownotice">显示公告</ul><ul class="wcc_mlist" id="chatTochuncai">聊&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天</ul><ul class="wcc_mlist" id="foods">吃 零 食</ul><ul class="wcc_mlist" id="blogmanage">博客后台</ul><ul class="wcc_mlist" id="lifetimechuncai">生存时间</ul><ul class="wcc_mlist" id="closechuncai">关闭春菜</ul></div><div><ul id="chuncaisaying"></ul></div><div id="getmenu"> </div></div><div id="chat_bottom"></div></div></div>');
+    smjq("body").append('<div id="smchuncai" onfocus="this.blur();" style="color:#626262;z-index:99999;"><div id="chuncaiface"></div><div id="dialog_chat"><div id="chat_top"></div><div id="dialog_chat_contents"><div id="dialog_chat_loading"></div><div id="tempsaying"></div><div id="showchuncaimenu"><ul class="wcc_mlist" id="shownotice">显示公告</ul><ul class="wcc_mlist" id="chatTochuncai">聊&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天</ul><ul class="wcc_mlist" id="foods">吃 零 食</ul><ul class="wcc_mlist" id="blogmanage">博客后台</ul><ul class="wcc_mlist" id="lifetimechuncai">生存时间</ul><ul class="wcc_mlist" id="closechuncai">关闭兔兔</ul></div><div><ul id="chuncaisaying"></ul></div><div id="getmenu"> </div></div><div id="chat_bottom"></div></div></div>');
     smjq("#smchuncai").append('<div id="addinput"><div id="inp_l"><input id="talk" type="text" name="mastersay" onkeydown="if(event.keyCode==13){smWCC.submitTalk(this);}" value="" /> <input id="talkto" type="button" value=" " /></div><div id="inp_r"> X </div></div>');
     smjq("body").append('<div id="callchuncai">召唤兔兔</div>');
-    //判断春菜是否处于隐藏状态
+    //判断兔兔是否处于隐藏状态
     var is_closechuncai = smWCC.getCookie("is_closechuncai");
     if(is_closechuncai == 'close'){
         smWCC.closechuncai_init();
@@ -169,8 +169,8 @@ smjq(document).ready(function(){
         this.talkobj;
         this.tsi = 0;
         this.talkself_arr = [
-           /* ["背我！！", "1"],
-            ["咱不换，咱留着", "3"],*/
+            ["背我！！", "1"],
+            ["咱不换，咱留着", "3"]
             ["不是自作多情，是自作专情", "1"],
             ["我才不是喜欢他，我也不知道是什么他", "2"],
             ["我会帮你赢", "2"]
