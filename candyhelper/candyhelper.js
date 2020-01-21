@@ -1,4 +1,4 @@
-$("body").prepend('<link rel="stylesheet" href="https://www.yeallye.com/yelou/yaoyaoye/yaoyaoye.css"><span class="ghj_sayings"></span><div class="ghjLive"><span class="ghjLiveDot" Onclick="showMessage(ghj_saying,5000)"></div></span><div id=ghjchatdiv style="display: none;"><input id=ghjchatinput  autocomplete="off"><button id=ghjchatsubmit>鍙戦€�</button></div>')
+$("body").prepend('<link rel="stylesheet" href="https://raw.githack.com/Aenigma-fishriver/GhjSzd/master/candyhelper/candyhelper.css"><span class="ghj_sayings"></span><div class="ghjLive"><span class="ghjLiveDot" Onclick="showMessage(ghj_saying,5000)"></div></span><div id=ghjchatdiv style="display: none;"><input id=ghjchatinput  autocomplete="off"><button id=ghjchatsubmit>鍙戦€�</button></div>')
 $(document).ready(function () {
     var select = document.getElementById("duqian");
     var add = document.createElement("p");
