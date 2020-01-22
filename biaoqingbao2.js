@@ -30,13 +30,17 @@ $(document).ready(function () {
         "https://i.loli.net/2019/10/29/V8vtdxUfuOJqb47.jpg",
         "https://i.loli.net/2019/10/29/Rwhqg42fHXl8osz.jpg",
         "https://i.loli.net/2019/10/29/dOo9nLufCjB1qUP.jpg",
-        "https://i.loli.net/2019/10/29/Lmc8N3QTtiOJlUb.gif",
+        "https://i.loli.net/2019/12/26/SAu4jQ7MmIYy6h1.gif",
+	"https://i.loli.net/2019/12/23/DLXk2Ke7bViHJ8c.gif",
+	"https://i.loli.net/2019/10/29/Lmc8N3QTtiOJlUb.gif",
         "https://i.loli.net/2019/10/29/On3hi6oeY9fFqN2.gif",
         "https://i.loli.net/2019/11/06/iv2fjc6G91PY7xh.gif",
         "https://i.loli.net/2019/11/04/pvAJ1ug7jw9CNRt.gif",
         "https://i.loli.net/2019/11/08/UYNJfIkeGA1qd4T.gif",
         "https://i.loli.net/2019/10/28/cuJ7tI13rpUy6Qg.jpg",
         "https://i.loli.net/2019/10/28/qX7bweSf2jaYQKH.jpg",
+	"https://i.loli.net/2019/12/26/1sT7VB9A3GuikhO.gif",
+	"https://i.loli.net/2020/01/22/28zuGxgKhv3OfQ1.gif",
         "https://i.loli.net/2019/10/29/lMb6dN5pa8A9gzk.gif",
         "https://i.loli.net/2019/10/29/iDLA6fjyP79OZMo.gif",
         "https://i.loli.net/2019/10/29/dkNMv4XQByUsqpR.gif",
@@ -48,7 +52,8 @@ $(document).ready(function () {
         "https://i.loli.net/2019/11/06/9duQe4lKwaqn2Jc.gif",
         "https://i.loli.net/2019/10/29/NtfHk71Lp4DUXcZ.jpg",
         "https://i.loli.net/2019/10/29/wZ8MhdYHLkatIuS.jpg",
-        "https://i.loli.net/2019/11/06/Zyz5NPYfW6Fibja.gif"
+        "https://i.loli.net/2019/11/06/Zyz5NPYfW6Fibja.gif",
+	      
       ];
       $("#GhjSzd").empty();
       for (var b = 0; b < imglist.length; b++) {
