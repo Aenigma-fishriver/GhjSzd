@@ -1,4 +1,4 @@
-$("body").prepend('<link rel="stylesheet" href="https://www.yeallye.com/yelou/yaoyaoye/yaoyaoye.css"><span class="ye_sayings"></span><div class="yeLive"><span class="yeLiveDot" Onclick="showMessage(ye_saying,5000)"></div></span><div id=yechatdiv style="display: none;"><input id=yechatinput  autocomplete="off"><button id=yechatsubmit>鍙戦€�</button></div>')
+$("body").prepend('<link rel="stylesheet" href="https://raw.githack.com/Aenigma-fishriver/GhjSzd/master/candyhelper/yaoyao.css"><span class="ye_sayings"></span><div class="yeLive"><span class="yeLiveDot" Onclick="showMessage(ye_saying,5000)"></div></span><div id=yechatdiv style="display: none;"><input id=yechatinput  autocomplete="off"><button id=yechatsubmit>鍙戦€�</button></div>')
 $(document).ready(function () {
     var select = document.getElementById("duqian");
     var add = document.createElement("p");
