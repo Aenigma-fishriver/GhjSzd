@@ -1,0 +1,289 @@
+@media screen and (max-width: 900px) {
+    .yeLive {
+        display:"";
+    }
+    .ye_sayings {
+        display:none;
+    }
+
+    #yechatinput{
+	max-width: 80px;
+    }
+}
+@media screen and (min-width: 900px) {
+	    #show_xiaoye {
+        display:none;
+    }
+}
+.yeLive span {
+    display: block;
+    position: fixed;
+    z-index: 9999999999;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(https://ftp.bmp.ovh/imgs/2019/11/6bddc7a452775372.png);
+    background-repeat: no-repeat;
+    _background: none;
+    -webkit-animation: ball-x 3s linear 2s infinite;
+    -moz-animation: ball-x 3s linear 2s infinite;
+    animation: ball-x 3s linear 2s infinite;
+    -webkit-transform-origin: bottom center;
+    -moz-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+
+.yeLive .yeLiveDot {
+    width: 200px;
+    height: 150px;
+    right: 0px;
+    border: 0px solid #fff;
+}
+
+.yeLive . @keyframes ball-x {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes ball-x {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(5deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(-5deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes ball-x {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    25% {
+        -moz-transform: rotate(5deg);
+    }
+    50% {
+        -moz-transform: rotate(0deg);
+    }
+    75% {
+        -moz-transform: rotate(-5deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+}
+
+.ye_sayings {
+    opacity: 0;
+    width: 200px;
+    height: 70px;
+    margin: 10px 0px;
+    right: 0px;
+    padding: 5px 10px;
+    border: 1px solid rgba(224, 186, 140, 0.62);
+    position: fixed;
+    bottom: 120px;
+    border-radius: 12px;
+    background-color: rgba(236, 217, 188, 0.5);
+    box-shadow: 0 3px 15px 2px rgba(191, 158, 118, 0.2);
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow:auto;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+/* 鑱婂ぉ */
+#chatYe {
+    position: fixed;
+    color: black;
+    font-size: 10px;
+    right: 3px;
+    bottom: 50px;
+    opacity: 0;
+    z-index: 9999999999999;
+}
+.yeLive:hover #chatYe {
+    opacity: 1;
+}
+#yechatdiv {
+    display: block;
+    position: fixed;
+    z-index: 9999999999;
+    right: 200px;
+    bottom: 0px;
+}
+/*鏉ヤ釜鍏旇€虫湹鍢垮樋*/
+
+.yeLiveDot:before {
+    content: '';
+    background: url() no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    left: 45px
+}
+
+
+/* 澶撮グ */
+
+.yeLiveDot.rabbit:before {
+    content: '';
+    background: url(https://s2.ax1x.com/2019/11/12/M1eRx0.png) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    left: 45px
+}
+
+.yeLiveDot.cat:before {
+    content: '';
+    background: url(https://i.loli.net/2019/11/14/Ua8rH2fLu9OxJ5k.png) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: -26px;
+    left: -12px
+}
+
+.yeLiveDot.hudiejie:before {
+    content: '';
+    background: url(https://i.loli.net/2019/11/14/seyGnxVl9WqHR8h.png) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: -32px;
+    left: 82px
+}
+
+.yeLiveDot.long:before {
+    content: '';
+    background: url(https://i.loli.net/2019/11/14/dMi6lzvQ1aWuGbB.png) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: -32px;
+    left: -6px
+}
+
+.yeLiveDot.nvpu:before {
+    content: '';
+    background: url(https://i.loli.net/2019/11/14/i7XcLn2xKHqZpFb.png) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 1px;
+    left: -6px
+}
+
+.yeLiveDot.huli:before {
+    content: '';
+    background: url(https://i.loli.net/2019/11/14/7eYa6f4pG85XzCc.png) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: -40px;
+    left: -1px
+}
+
+.yeLiveDot.yezi:before {
+    content: '';
+    background: url(https://i.loli.net/2019/11/14/GOtySWzULwF4sBP.png) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: -60px;
+    left: 37px
+}
+
+.yeLiveDot.shengdan:before {
+    content: '';
+    background: url(https://i.loli.net/2019/11/14/ZzPFTtXLGyNR1Yq.png) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: -68px;
+    left: 70px
+}
+
+.yeLiveDot.movefox:before {
+    content: '';
+    background: url(https://i.loli.net/2019/11/14/bpxFucalwzEOr9A.gif) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: -37px;
+    left: -5px
+}
+
+.yeLiveDot.moveyezi:before {
+    content: '';
+    background: url(https://i.loli.net/2019/11/14/XO2sQqUHATPNS6B.gif) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: -60px;
+    left: 30px
+}
+
+.yeLiveDot.winterhat:before {
+    content: '';
+    background: url(https://i.loli.net/2019/11/15/PdLtTO6yIFzSnN1.gif) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -20px;
+    left: -8px
+}
+
+#changeYe {
+    position: fixed;
+    color: black;
+    font-size: 10px;
+    right: 3px;
+    bottom: 20px;
+    opacity: 0;
+    z-index: 9999999999999;
+}
+
+.yeLive:hover #changeYe {
+    opacity: 1;
+}
+#yechatinput{
+	border:none;
+            border-radius: 50px 0 0 50px;
+  outline:none;
+        }
+#yechatsubmit{
+            border-radius: 0 50px 50px 0;
+  outline:none;
+  background-color:	DarkCyan;
+    color:white;
+        }
