@@ -68,11 +68,11 @@ function hideMessage(timeout) {
 $(".yeLiveDot").hover(function () {
     $(".yeLive span").css(
       "background-image",
-      "url(https://s2.ax1x.com/2019/12/06/QJXWwT.png)"
+      "url(https://i.loli.net/2020/02/01/xBqsQHzeRPTIcj7.png)"
     );
     showMessage("鍒椆...濂界棐锛�", 3000)
 }, function () {
-    $(".yeLive span").css("background-image", "url(https://ftp.bmp.ovh/imgs/2019/11/6bddc7a452775372.png)")
+    $(".yeLive span").css("background-image", "url(https://i.loli.net/2020/02/01/7FC9BgLimrpcQX1.png)")
 });
 //鏉ヤ釜鍏旇€虫湹锛�
 //姣忔鏂板姞鏃讹細鏇存敼backgroundYe銆佸鍔犲嚱鏁�
