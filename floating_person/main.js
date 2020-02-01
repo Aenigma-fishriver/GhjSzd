@@ -51,7 +51,7 @@ $('#getmenu').click(function(){
     //点击显示公告
     $('#shownotice').click(function(){
 //        $('#tempsaying').text('欢迎来到小站,我是您的小导游哦!');
-        mytext = '欢迎来到小站,我是您的小导游哦!';
+        mytext = '欢迎来到本楼,一起来嗑桂花酒吧！';
         typeit($("#tempsaying"),mytext);
         $('#showmenu').hide();
         $('#getmenu').show();
@@ -64,52 +64,7 @@ $('#getmenu').click(function(){
         $('#play_widget').show();
 
     });
-    //点击查看Asuna生存时间
-    $('#lifetime').click(function(){
-        var dateStart=new Date('2020','01','06','22','13','07');
-        var dateEnd=new Date();
-        //下面计算日期相差的天时分秒数
-        var date3=dateEnd.getTime()-dateStart.getTime(); //时间差的毫秒数
-        //计算出相差天数
-        var days=Math.floor(date3/(24*3600*1000)) ;
-
-        //计算出小时数
-        var leave1=date3%(24*3600*1000);    //计算天数后剩余的毫秒数
-        var hours=Math.floor(leave1/(3600*1000)) ;
-        //计算相差分钟数
-        var leave2=leave1%(3600*1000);        //计算小时数后剩余的毫秒数
-        var minutes=Math.floor(leave2/(60*1000));
-        //计算相差秒数
-        var leave3=leave2%(60*1000) ;     //计算分钟数后剩余的毫秒数
-        var seconds=Math.round(leave3/1000);
-
-//        $('#tempsaying').html('我已经和姐妹们度过了'+"<span style='color:red;'>"+days+"</span>"+'天'+"<span style='color:red;'>"+hours+"</span>"+'时'+"<span style='color:red;'>"+minutes+"</span>"+'分'+"<span style='color:red;'>"+seconds+"</span>"+'秒咯,么么哒...');
-        mytext = '我已经和姐妹们度过了'+"<span style='color:red;'>"+days+"</span>"+'天'+"<span style='color:red;'>"+hours+"</span>"+'时'+"<span style='color:red;'>"+minutes+"</span>"+'分'+"<span style='color:red;'>"+seconds+"</span>"+'秒咯,么么哒...';
-        typeit($("#tempsaying"),mytext);
-        $('#showmenu').hide();
-        $('#getmenu').show();
-    });
-    //点击导航
-    $('#wccguide').click(function(){
-//        $('#tempsaying').text('还没设置该功能哦!');
-        mytext = '<ul>' +
-            '<li><a href="/" style="letter-space:2px;">Home</a></li><li><a href="/index/" style="letter-space:2px;">Blog</a></li>' +
-            '<li><a href="/wiki/" style="letter-space:2px;">Wiki</a></li><li><a href="/pic/" style="letter-space:2px;">Picture</a></li>' +
-            '<li><a href="/about/" style="letter-space:2px;">About</a></li><li><a href="/info/" style="letter-space:2px;">Internet News</a></li>' +
-            '</ul>';
-        typeit($("#tempsaying"),mytext);
-        $('#showmenu').hide();
-        $('#getmenu').show();
-    });
-    //点击搜索
-    $('#search_chat').click(function(){
-//        $('#tempsaying').text('还没设置该功能哦!');
-        mytext = '还没设置该功能哦!';
-        typeit($("#tempsaying"),mytext);
-        $('#showmenu').hide();
-        $('#getmenu').show();
-    });
-    //点击吃点零食
+ //点击吃点零食
     $('#foods').click(function(){
         mytext = '准备干什么呢？';
         typeit($("#tempsaying"),mytext);
@@ -153,7 +108,7 @@ $('#getmenu').click(function(){
     $('#closeasuna').click(function(){
         $('#showmenu').hide();
 //        $('#tempsaying').text('记得再叫我出来哦!');
-        mytext = '记得再叫我出来时，请点击左上方<code>召唤Asuna</code>哦！';
+        mytext = '记得再叫我出来时，请点击左上方<code>召唤导游</code>哦！';
         typeit($("#tempsaying"),mytext);
         setTimeout(function(){
             $('#float_asuna').fadeOut(2000);
@@ -165,24 +120,6 @@ $('#getmenu').click(function(){
 
 
 });
-//放在上面会隐身，拿开重新现身
-$('#asuna_pic').mouseover(function(){
-    $(this).css('opacity','0.3');
-//    $('#tempsaying').text('我会隐身哦!!!嘿嘿...');
-    mytext = '我会隐身哦!!!嘿嘿...';
-    typeit($("#tempsaying"),mytext);
-    $(this).mouseout(function () {
-        $(this).css('opacity','1.0');
-//        $('#tempsaying').text('鼠标拿开我就现身咯!');
-        mytext = '鼠标拿开我就现身咯!';
-        typeit($("#tempsaying"),mytext);
-    });
-});
-//右键阻止默认行为，且提示信息
-$('#asuna_pic').bind('contextmenu',function(evt){
-    evt.preventDefault();
-    typeit($("#tempsaying"),'点我，伦家也不会高兴的啦!');
-});
 //点击打开Asuna
 $('#callasuna').click(function(){
     $('#callasuna').hide();
@@ -193,7 +130,7 @@ $('#callasuna').click(function(){
     $('#getmenu').show();
 });
 //间隔15秒显示一个首页text
-var show_text=['好久没有休息啦，注意休息哦！','咳咳，有什么可以帮您的吗？','好好学习，天天向上哦!','累了？进入menu，听点音乐哦!','>>.......'];
+var show_text=['咱不换，咱留着','我会帮你赢','背我！','打他，我会心疼','我在等你点我，只要520','第一是你，第二是你，第三第四第五都是你','但是别怕，你会变得更强的','>>点|抽糖|来抽颗糖怎么样？？'];
 var i=0;
 var circuTime=setInterval(function () {
 //    $('#tempsaying').text(show_text[i]);
