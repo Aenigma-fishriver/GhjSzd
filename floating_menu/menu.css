@@ -1,0 +1,60 @@
+.menu_bt_h{
+    width:200px; 
+    height:50px; 
+    cursor:pointer; 
+    background-color:#050; 
+    text-align:center; 
+    line-height:50px; 
+    font-size:18px; 
+    color:#fff;
+}
+
+.menu_item_h{ 
+    width:200px; 
+    height:50px; 
+    margin-left:10px;
+    position:relative; 
+    background-color:#F80; 
+    top:-50px; left:200px; 
+    z-index:999; 
+    display:none;
+}
+
+.menu_bt_h:hover .menu_item_h{ 
+    display:block;
+}
+
+.trans_fadeout{
+   -webkit-transition:all 0.5s linear;
+   -moz-transition:all 0.5s linear;
+   -ms-transition:all 0.5s linear;
+   -o-transition:all 0.5s linear;
+   transition:all 0.5s linear;
+}
+
+.menu_btn_v{
+    width:200px; 
+    height:50px; 
+    cursor:pointer; 
+    background-color:#050; 
+    text-align:center; 
+    line-height:50px; 
+    font-size:18px; 
+    color:#fff;
+}
+
+.menu_item_v{
+    width:200px;
+    height:50px;
+    margin-top:10px;
+    margin-left:0px;
+    position:absolute;
+    visibility:hidden;
+    opacity:0;
+    background-color:#F80;
+}
+
+.menu_btn_v:hover .menu_item_v{
+    visibility:visible;
+    opacity:1;
+}
