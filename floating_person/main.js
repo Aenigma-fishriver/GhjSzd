@@ -81,7 +81,7 @@ $('#getmenu').click(function(){
         $('#getmenu').show();
         $('#food1').click(function () {
 //            $('#tempsaying').text('梅子神马的，最好吃咯!');
-            mytext = '梅子神马的，最好吃咯!';
+            mytext = <a id="ye_random_href1" target="_blank" onclick ="YeRandomHref1()">点我吃糖！</a>;
             typeit($("#tempsaying"),mytext);
             $('#food_list').hide();
         });
