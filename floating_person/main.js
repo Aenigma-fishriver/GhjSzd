@@ -353,3 +353,47 @@ function animate(el,obj){//其中attr是需要获取的style属性，step是移�
 		}
 
 }
+
+var all_ye_href_one = [
+    "https://m.weibo.cn/5234075079/4376309977025951",
+    "https://m.weibo.cn/5234075079/4376328227166957",
+    "https://m.weibo.cn/3993573986/4384518439642170",
+    "https://m.weibo.cn/6443587118/4308220538980641",
+    "https://m.weibo.cn/6457832661/4368362479993299",
+    "https://m.weibo.cn/3485182815/4358839975214209",
+    "https://m.weibo.cn/3485182815/4358886515291301",
+    "https://m.weibo.cn/6443587118/4358846257836816",
+    "https://m.weibo.cn/6602773697/4358908917313932",
+    "https://i.loli.net/2019/08/06/vIsMZk7LaQmGOj6.jpg",
+    "https://m.weibo.cn/6552667925/4362827101572032",
+    "https://i.loli.net/2019/08/06/yx7PlWzmNpi5jd8.gif",
+    "https://imgchr.com/i/e497dS",
+    "https://m.weibo.cn/6979966385/4377802462132876",
+    "https://m.weibo.cn/5212412366/4378858386212943",
+    "https://m.weibo.cn/5531250302/4236467850987849",
+    "https://m.weibo.cn/5352797864/4256328673016404",
+    "https://m.weibo.cn/5531250302/4259962655809809",
+    "https://m.weibo.cn/6440390848/4299835765414765",
+    "https://m.weibo.cn/3181504700/4359131575435072",
+    "https://m.weibo.cn/6602773697/4358892517171035",
+    "https://m.weibo.cn/3485182815/4359138601896078",
+    "https://m.weibo.cn/5967513378/4350616049018093",
+    "https://m.weibo.cn/6443587118/4241540303971196",
+    "https://i.loli.net/2019/08/07/29GCNxudIKLhAik.jpg",
+    "https://m.weibo.cn/6055363231/4378005406913437",
+    "https://m.weibo.cn/5255081991/4331950661665342",
+    "https://imgchr.com/i/eojwqK",
+    "https://i.loli.net/2019/08/08/ShAMUNHX3fzcl8Z.jpg",
+    "https://i.loli.net/2019/08/08/l3BvqZay2Qwi9p4.jpg",
+    "https://m.weibo.cn/7019747772/4374473807252539",
+    "https://m.weibo.cn/6443587118/4249149249600951",
+    "https://m.weibo.cn/6552667925/4308892366168483",
+    "https://m.weibo.cn/6552667925/4308873957844986",
+    "https://m.weibo.cn/3250287550/4312932546121532",
+    "https://m.weibo.cn/6602773697/4393345973002009"
+];
+
+function YeRandomHref1() {
+    $("#ye_random_href1").attr(
+        "href",
+        all_ye_href_one[Math.floor(Math.random() * all_ye_href_one.length)]
